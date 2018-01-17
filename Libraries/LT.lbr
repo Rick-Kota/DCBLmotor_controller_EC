@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -39,7 +39,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -74,6 +74,45 @@
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.9" y="-1.6" radius="0.070709375" width="0.127" layer="21"/>
 </package>
+<package name="LGA_25">
+<smd name="A3" x="-2.54" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="B3" x="-1.27" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="C3" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="D3" x="1.27" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="E3" x="2.54" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="A4" x="-2.54" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="B4" x="-1.27" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="C4" x="0" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="D4" x="1.27" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="E4" x="2.54" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="A5" x="-2.54" y="-2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="C5" x="0" y="-2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="E5" x="2.54" y="-2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="A2" x="-2.54" y="1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="B2" x="-1.27" y="1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="D2" x="1.27" y="1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="E2" x="2.54" y="1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="A1" x="-2.54" y="2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="B1" x="-1.27" y="2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="D1" x="1.27" y="2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="E1" x="2.54" y="2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<wire x1="-3.125" y1="3.125" x2="0" y2="3.125" width="0.127" layer="21"/>
+<wire x1="0" y1="3.125" x2="3.125" y2="3.125" width="0.127" layer="21"/>
+<wire x1="3.125" y1="3.125" x2="3.125" y2="-3.125" width="0.127" layer="21"/>
+<wire x1="3.125" y1="-3.125" x2="-3.125" y2="-3.125" width="0.127" layer="21"/>
+<wire x1="-3.125" y1="-3.125" x2="-3.125" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.125" y1="0" x2="-3.125" y2="3.125" width="0.127" layer="21"/>
+<wire x1="-3.125" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="3.125" width="0.127" layer="21"/>
+<pad name="C1" x="0" y="2.54" drill="0.3" diameter="0.6096"/>
+<pad name="C2" x="0" y="1.27" drill="0.3" diameter="0.6096"/>
+<pad name="B5" x="-1.27" y="-2.54" drill="0.3" diameter="0.6096"/>
+<pad name="D5" x="1.27" y="-2.54" drill="0.3" diameter="0.6096"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-1.27" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<text x="1.27" y="-5.08" size="1.27" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC2862A">
@@ -92,6 +131,30 @@
 <text x="15.24" y="-27.94" size="1.778" layer="94">&gt;VALUE</text>
 <text x="15.24" y="-30.48" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
+<symbol name="LTM4622">
+<pin name="VIN" x="-5.08" y="0" length="middle"/>
+<pin name="RUN1" x="-5.08" y="-5.08" length="middle"/>
+<pin name="RUN2" x="-5.08" y="-10.16" length="middle"/>
+<pin name="INTVCC" x="-5.08" y="-15.24" length="middle"/>
+<pin name="SY/MODE" x="-5.08" y="-20.32" length="middle"/>
+<pin name="TRACK/SS1" x="-5.08" y="-25.4" length="middle"/>
+<pin name="TRACK/SS2" x="-5.08" y="-30.48" length="middle"/>
+<pin name="FREQ" x="-5.08" y="-35.56" length="middle"/>
+<pin name="PG1" x="10.16" y="7.62" length="middle" rot="R270"/>
+<pin name="PG2" x="20.32" y="7.62" length="middle" rot="R270"/>
+<pin name="GND" x="15.24" y="-43.18" length="middle" rot="R90"/>
+<pin name="VOUT2" x="30.48" y="-12.7" length="middle" rot="R180"/>
+<pin name="COMP1" x="30.48" y="-17.78" length="middle" rot="R180"/>
+<pin name="COMP2" x="30.48" y="-22.86" length="middle" rot="R180"/>
+<pin name="FB1" x="30.48" y="-27.94" length="middle" rot="R180"/>
+<pin name="VOUT1" x="30.48" y="-7.62" length="middle" rot="R180"/>
+<pin name="FB2" x="30.48" y="-33.02" length="middle" rot="R180"/>
+<wire x1="0" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
+<wire x1="25.4" y1="2.54" x2="25.4" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-38.1" x2="0" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="0" y1="-38.1" x2="0" y2="2.54" width="0.254" layer="94"/>
+<text x="20.32" y="-40.64" size="1.778" layer="94">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LTC2862A" prefix="IC">
@@ -109,6 +172,37 @@
 <connect gate="G$1" pin="RE" pad="P$2"/>
 <connect gate="G$1" pin="RO" pad="P$1"/>
 <connect gate="G$1" pin="VCC" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTM4622" prefix="DC-DC">
+<gates>
+<gate name="G$1" symbol="LTM4622" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="LGA_25">
+<connects>
+<connect gate="G$1" pin="COMP1" pad="E5"/>
+<connect gate="G$1" pin="COMP2" pad="A5"/>
+<connect gate="G$1" pin="FB1" pad="E4"/>
+<connect gate="G$1" pin="FB2" pad="A4"/>
+<connect gate="G$1" pin="FREQ" pad="C4"/>
+<connect gate="G$1" pin="GND" pad="B5 C1 C2 D5"/>
+<connect gate="G$1" pin="INTVCC" pad="C3"/>
+<connect gate="G$1" pin="PG1" pad="D4"/>
+<connect gate="G$1" pin="PG2" pad="B4"/>
+<connect gate="G$1" pin="RUN1" pad="D2"/>
+<connect gate="G$1" pin="RUN2" pad="B2"/>
+<connect gate="G$1" pin="SY/MODE" pad="C5"/>
+<connect gate="G$1" pin="TRACK/SS1" pad="E3"/>
+<connect gate="G$1" pin="TRACK/SS2" pad="A3"/>
+<connect gate="G$1" pin="VIN" pad="A2 B3 D3 E2"/>
+<connect gate="G$1" pin="VOUT1" pad="D1 E1"/>
+<connect gate="G$1" pin="VOUT2" pad="A1 B1"/>
 </connects>
 <technologies>
 <technology name=""/>

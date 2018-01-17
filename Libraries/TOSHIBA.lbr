@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -181,8 +181,8 @@
 <wire x1="-7" y1="-6" x2="-7" y2="6" width="0.127" layer="21"/>
 <wire x1="-7" y1="6" x2="-6" y2="7" width="0.127" layer="21"/>
 <circle x="-5.5" y="-5.5" radius="0.70710625" width="0.127" layer="21"/>
-<text x="7.5" y="-8" size="1.27" layer="21">&gt;VALUE</text>
-<text x="7.5" y="-9.5" size="1.27" layer="21">&gt;NAME</text>
+<text x="-6.47" y="-10.54" size="1.27" layer="21">&gt;VALUE</text>
+<text x="-6.47" y="-12.04" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -296,6 +296,29 @@
 <pin name="CVREFABC" x="-15.24" y="50.8" length="middle" rot="R270"/>
 <wire x1="-38.1" y1="30.48" x2="-22.86" y2="45.72" width="1.016" layer="94"/>
 <text x="-10.16" y="-2.54" size="5.08" layer="94">TMPM370FYFG </text>
+</symbol>
+<symbol name="TMPM370">
+<pin name="P$1" x="-5.08" y="27.94" length="middle"/>
+<pin name="P$2" x="-5.08" y="22.86" length="middle"/>
+<pin name="P$3" x="-5.08" y="17.78" length="middle"/>
+<pin name="P$4" x="-5.08" y="12.7" length="middle"/>
+<pin name="P$5" x="-5.08" y="7.62" length="middle"/>
+<pin name="P$6" x="-5.08" y="2.54" length="middle"/>
+<pin name="DVSS-1$1" x="-5.08" y="-7.62" length="middle"/>
+<pin name="DVSS-2$19" x="-5.08" y="-12.7" length="middle"/>
+<pin name="DVSS-3$48" x="-5.08" y="-17.78" length="middle"/>
+<pin name="DVSS-4$56" x="-5.08" y="-22.86" length="middle"/>
+<pin name="DVSS-5$62" x="-5.08" y="-27.94" visible="pin" length="middle"/>
+<pin name="P$12" x="40.64" y="10.16" length="middle" rot="R180"/>
+<pin name="P$13" x="40.64" y="15.24" length="middle" rot="R180"/>
+<pin name="P$14" x="40.64" y="22.86" length="middle" rot="R180"/>
+<pin name="P$15" x="40.64" y="27.94" length="middle" rot="R180"/>
+<pin name="X1$47" x="40.64" y="-20.32" length="middle" rot="R180"/>
+<pin name="X2$49" x="40.64" y="-25.4" length="middle" rot="R180"/>
+<pin name="VOUT3$60" x="40.64" y="-33.02" visible="pin" length="middle" rot="R180"/>
+<pin name="VOUT15$55" x="40.64" y="-35.56" length="middle" rot="R180"/>
+<pin name="P$7" x="-5.08" y="-35.56" length="middle"/>
+<pin name="P$8" x="-5.08" y="-38.1" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
