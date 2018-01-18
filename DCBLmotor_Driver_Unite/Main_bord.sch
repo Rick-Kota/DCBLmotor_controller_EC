@@ -2666,12 +2666,22 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <wire x1="38.1" y1="-7.62" x2="38.1" y2="-20.32" width="0.1524" layer="91"/>
 <label x="38.1" y="-20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<wire x1="-83.82" y1="-53.34" x2="-91.44" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-86.36" y="-53.34" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="3Y"/>
+</segment>
 </net>
 <net name="ENC_A-2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PF2/ENCA1/SCLK3/CTS3"/>
 <wire x1="111.76" y1="17.78" x2="121.92" y2="17.78" width="0.1524" layer="91"/>
 <label x="114.3" y="17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-129.54" y1="-88.9" x2="-116.84" y2="-88.9" width="0.1524" layer="91"/>
+<label x="-129.54" y="-88.9" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="1Y"/>
 </segment>
 </net>
 <net name="ENC_B-2" class="0">
@@ -2680,12 +2690,22 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <wire x1="111.76" y1="20.32" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
 <label x="114.3" y="20.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-129.54" y1="-93.98" x2="-116.84" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-129.54" y="-93.98" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="2Y"/>
+</segment>
 </net>
 <net name="ENC_Z-2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PF4/ENCZ1/RXD3"/>
 <wire x1="111.76" y1="22.86" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
 <label x="114.3" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-91.44" y1="-96.52" x2="-78.74" y2="-96.52" width="0.1524" layer="91"/>
+<label x="-86.36" y="-96.52" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="3Y"/>
 </segment>
 </net>
 <net name="ENC_B-1" class="0">
@@ -2694,12 +2714,22 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <wire x1="35.56" y1="-7.62" x2="35.56" y2="-20.32" width="0.1524" layer="91"/>
 <label x="35.56" y="-20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<wire x1="-116.84" y1="-50.8" x2="-129.54" y2="-50.8" width="0.1524" layer="91"/>
+<label x="-129.54" y="-50.8" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="2Y"/>
+</segment>
 </net>
 <net name="ENC_A-1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="TB5IN/ENCA0/PD0"/>
 <wire x1="33.02" y1="-7.62" x2="33.02" y2="-20.32" width="0.1524" layer="91"/>
 <label x="33.02" y="-20.32" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="-116.84" y1="-45.72" x2="-129.54" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-129.54" y="-45.72" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="1Y"/>
 </segment>
 </net>
 <net name="AVDD" class="0">
