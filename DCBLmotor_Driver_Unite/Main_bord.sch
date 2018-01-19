@@ -955,20 +955,28 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="0" y1="-2.5" x2="-0.5" y2="-1.5" width="0.127" layer="21"/>
 <text x="-7.5" y="-3.5" size="1.27" layer="21">&gt;NAME</text>
 </package>
-<package name="DF11-4DS-2C">
-<smd name="P$4" x="-1" y="4.15" dx="1.1" dy="2" layer="1"/>
-<smd name="P$2" x="1" y="4.15" dx="1.1" dy="2" layer="1"/>
-<smd name="P$1" x="1" y="-4.15" dx="1.1" dy="2" layer="1"/>
-<smd name="P$3" x="-1" y="-4.15" dx="1.1" dy="2" layer="1"/>
-<smd name="TAB" x="-5.35" y="0" dx="2.8" dy="2" layer="1"/>
-<smd name="TAB2" x="5.35" y="0" dx="2.8" dy="2" layer="1"/>
-<wire x1="-4.4" y1="3.2" x2="4.3" y2="3.2" width="0.127" layer="21"/>
-<wire x1="4.3" y1="3.2" x2="4.3" y2="-3.2" width="0.127" layer="21"/>
-<wire x1="4.3" y1="-3.2" x2="-4.4" y2="-3.2" width="0.127" layer="21"/>
-<wire x1="-4.4" y1="-3.2" x2="-4.4" y2="2.4" width="0.127" layer="21"/>
-<circle x="1.1" y="-0.7" radius="0.360553125" width="0.127" layer="21"/>
-<wire x1="-4.4" y1="2.4" x2="-4.4" y2="3.2" width="0.127" layer="21"/>
-<wire x1="-4.4" y1="2.4" x2="4.3" y2="2.4" width="0.127" layer="21"/>
+<package name="DF11_4DP-2D">
+<pad name="P$1" x="0.97" y="-1.14" drill="0.75" shape="square"/>
+<pad name="P$2" x="0.97" y="0.86" drill="0.75"/>
+<pad name="P$3" x="-1.03" y="-1.14" drill="0.75"/>
+<pad name="P$4" x="-1.03" y="0.86" drill="0.75"/>
+<wire x1="-0.53" y1="-2.64" x2="0.47" y2="-2.64" width="0.127" layer="21"/>
+<wire x1="0.47" y1="-2.64" x2="0.97" y2="-2.64" width="0.127" layer="21"/>
+<wire x1="0.97" y1="-2.64" x2="1.47" y2="-2.64" width="0.127" layer="21"/>
+<wire x1="1.47" y1="-2.64" x2="2.97" y2="-2.64" width="0.127" layer="21"/>
+<wire x1="2.97" y1="-2.64" x2="2.97" y2="-2.14" width="0.127" layer="21"/>
+<wire x1="2.97" y1="-2.14" x2="2.97" y2="2.36" width="0.127" layer="21"/>
+<wire x1="0.97" y1="-2.64" x2="0.97" y2="-2.14" width="0.127" layer="21"/>
+<wire x1="0.97" y1="-2.14" x2="2.97" y2="-2.14" width="0.127" layer="21"/>
+<wire x1="1.47" y1="-2.64" x2="0.97" y2="-3.64" width="0.127" layer="21"/>
+<wire x1="0.97" y1="-3.64" x2="0.47" y2="-2.64" width="0.127" layer="21"/>
+<wire x1="2.98" y1="2.37" x2="-2.82" y2="2.37" width="0.127" layer="21"/>
+<wire x1="-2.82" y1="2.37" x2="-2.82" y2="-2.14" width="0.127" layer="21"/>
+<wire x1="-2.82" y1="-2.14" x2="-2.82" y2="-2.64" width="0.127" layer="21"/>
+<wire x1="-1.02" y1="-2.14" x2="-2.82" y2="-2.14" width="0.127" layer="21"/>
+<wire x1="-1.02" y1="-2.14" x2="-1.02" y2="-2.62" width="0.127" layer="21"/>
+<wire x1="-0.54" y1="-2.64" x2="-2.82" y2="-2.64" width="0.127" layer="21"/>
+<text x="-2.27" y="-4.68" size="1.016" layer="21">&gt;NAME</text>
 </package>
 <package name="HIF3FC-10PA">
 <pad name="P$1" x="-5.08" y="1.27" drill="0.6" shape="square"/>
@@ -989,7 +997,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-1" y1="3" x2="1" y2="3" width="0.127" layer="21"/>
 <wire x1="1" y1="3" x2="1" y2="2" width="0.127" layer="21"/>
 <text x="2.4" y="2.4" size="1.27" layer="21">&gt;NAME</text>
-<text x="2.4" y="-3.6" size="1.27" layer="21">&gt;VALUE</text>
+<text x="-6.49" y="-3.6" size="0.8128" layer="21">&gt;VALUE</text>
 <wire x1="-6" y1="2" x2="-6" y2="-2" width="0.127" layer="21"/>
 <wire x1="6" y1="-2" x2="6" y2="2" width="0.127" layer="21"/>
 </package>
@@ -1081,12 +1089,12 @@ In this library the device names are the same as the pin names of the symbols, t
 </device>
 </devices>
 </deviceset>
-<deviceset name="DF11-4DS-2C" prefix="CN">
+<deviceset name="DF11-4DP-2DSR" prefix="CN">
 <gates>
 <gate name="G$1" symbol="CON-1X4" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DF11-4DS-2C">
+<device name="" package="DF11_4DP-2D">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -1185,95 +1193,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/LQW21HN1R0J00
 <attribute name="MANUFACTURER_PART_NUMBER" value="LQW21HN1R0J00L" constant="no"/>
 <attribute name="OTHER_PART_NUMBER" value="" constant="no"/>
 <attribute name="RS_PART_NUMBER" value="7855321" constant="no"/>
-<attribute name="SUPPLIER_NAME" value="RS" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="1825910-6">
-<description>&lt;TE CONNECTIVITY / ALCOSWITCH - 1825910-6 - TACT SWITCH, SPST, 0.05A, 24VDC, SOLDER&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="1825910-6">
-<description>&lt;b&gt;1825910-6&lt;/b&gt;&lt;br&gt;
-</description>
-<pad name="1" x="3.25" y="2.25" drill="1" diameter="1.5"/>
-<pad name="2" x="3.25" y="-2.25" drill="1" diameter="1.5"/>
-<pad name="3" x="-3.25" y="2.25" drill="1" diameter="1.5"/>
-<pad name="4" x="-3.25" y="-2.25" drill="1" diameter="1.5"/>
-<text x="-0.33343125" y="0.01038125" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="-0.33343125" y="0.01038125" size="1.27" layer="51" align="center">&gt;VALUE</text>
-<wire x1="-3" y1="3" x2="3" y2="3" width="0.2" layer="51"/>
-<wire x1="3" y1="3" x2="3" y2="-3" width="0.2" layer="51"/>
-<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.2" layer="51"/>
-<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.2" layer="51"/>
-<wire x1="-2.6" y1="3" x2="2.6" y2="3" width="0.2" layer="25"/>
-<wire x1="-2.6" y1="-3" x2="2.6" y2="-3" width="0.2" layer="25"/>
-<wire x1="-3" y1="1.3" x2="-3" y2="-1.3" width="0.2" layer="25"/>
-<wire x1="3" y1="1.3" x2="3" y2="-1.3" width="0.2" layer="25"/>
-<circle x="3.81" y="3.81" radius="0.127" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="1825910-6">
-<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="2.54" x2="15.24" y2="0" width="0.254" layer="94"/>
-<wire x1="15.24" y1="0" x2="15.24" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-2.54" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
-<text x="10.16" y="5.08" size="1.778" layer="95" align="center">&gt;NAME</text>
-<text x="10.16" y="-7.62" size="1.778" layer="96" align="center">&gt;VALUE</text>
-<pin name="1" x="0" y="0" length="middle" direction="pas"/>
-<pin name="2" x="0" y="-2.54" length="middle" direction="pas"/>
-<pin name="3" x="20.32" y="0" length="middle" direction="pas" rot="R180"/>
-<pin name="4" x="20.32" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<circle x="6.858" y="-1.016" radius="0.567959375" width="0.254" layer="94"/>
-<circle x="13.462" y="-1.016" radius="0.567959375" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="6.858" y1="-0.254" x2="13.462" y2="1.016" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.842" y2="0" width="0.254" layer="94"/>
-<wire x1="5.842" y1="0" x2="5.842" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="5.842" y1="-1.016" x2="5.842" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.842" y1="-2.54" x2="5.334" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-2.54" x2="14.478" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="14.478" y1="-2.54" x2="14.478" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="14.478" y1="-1.016" x2="14.478" y2="0" width="0.254" layer="94"/>
-<wire x1="14.478" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
-<wire x1="14.224" y1="-1.016" x2="14.478" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="6.096" y1="-1.016" x2="5.842" y2="-1.016" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="1825910-6" prefix="S">
-<description>&lt;b&gt;TE CONNECTIVITY / ALCOSWITCH - 1825910-6 - TACT SWITCH, SPST, 0.05A, 24VDC, SOLDER&lt;/b&gt;&lt;p&gt;
-&lt;/b&gt;&lt;br&gt;&lt;a href="&lt;br&gt;&lt;a href="https://componentsearchengine.com/Images/9/1825910-6.JPG" title="Image"&gt;
-&lt;img src="https://componentsearchengine.com/Images/9/1825910-6.JPG" width="150"&gt;&lt;/a&gt;&lt;p&gt;
-Source: &lt;a href="http://www.farnell.com/datasheets/921681.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="1825910-6" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1825910-6">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="3D_PACKAGE" value="" constant="no"/>
-<attribute name="ALLIED_NUMBER" value="" constant="no"/>
-<attribute name="DESCRIPTION" value="TE CONNECTIVITY / ALCOSWITCH - 1825910-6 - TACT SWITCH, SPST, 0.05A, 24VDC, SOLDER" constant="no"/>
-<attribute name="HEIGHT" value="mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="TE Connectivity" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="1825910-6" constant="no"/>
-<attribute name="OTHER_PART_NUMBER" value="" constant="no"/>
-<attribute name="RS_PART_NUMBER" value="1613779" constant="no"/>
 <attribute name="SUPPLIER_NAME" value="RS" constant="no"/>
 </technology>
 </technologies>
@@ -1721,6 +1640,112 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 </deviceset>
 </devicesets>
 </library>
+<library name="Panasonic">
+<packages>
+<package name="EVQ">
+<smd name="P$1" x="-2.7" y="0" dx="2" dy="1.6" layer="1"/>
+<smd name="P$2" x="2.7" y="0" dx="2" dy="1.6" layer="1"/>
+<wire x1="-3" y1="2" x2="3" y2="2" width="0.127" layer="21"/>
+<wire x1="3" y1="2" x2="3" y2="-2" width="0.127" layer="21"/>
+<wire x1="3" y1="-2" x2="-3" y2="-2" width="0.127" layer="21"/>
+<wire x1="-3" y1="-2" x2="-3" y2="2" width="0.127" layer="21"/>
+<wire x1="-1" y1="0.5" x2="-1" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.5" x2="1" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.5" x2="1" y2="0.5" width="0.127" layer="21"/>
+<wire x1="1" y1="0.5" x2="-1" y2="0.5" width="0.127" layer="21"/>
+<text x="-2" y="2.5" size="0.8128" layer="21">&gt;NAME</text>
+<text x="-3" y="-3" size="0.8128" layer="21">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="S">
+<wire x1="0" y1="3.175" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.905" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
+<circle x="0" y="-1.905" radius="0.127" width="0.4064" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="95" rot="R90">&gt;PART</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="EVQ-PE104K" prefix="SW">
+<description>Tactile Switch SPST-NO Top Actuated Surface Mount</description>
+<gates>
+<gate name="G$1" symbol="S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EVQ">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Molex">
+<packages>
+<package name="0430450612">
+<pad name="P$1" x="3" y="-1.5" drill="1.2" shape="square"/>
+<pad name="P$2" x="0" y="-1.5" drill="1.2"/>
+<pad name="P$3" x="-3" y="-1.5" drill="1.2"/>
+<pad name="P$4" x="3" y="1.5" drill="1.2"/>
+<pad name="P$5" x="0" y="1.5" drill="1.2"/>
+<pad name="P$6" x="-3" y="1.5" drill="1.2"/>
+<hole x="-6" y="2.44" drill="1.03"/>
+<hole x="6" y="2.44" drill="1.03"/>
+<wire x1="-6.3" y1="3.7" x2="-6.3" y2="-3.7" width="0.127" layer="21"/>
+<wire x1="6.3" y1="3.7" x2="6.3" y2="-3.7" width="0.127" layer="21"/>
+<wire x1="-6.3" y1="3.7" x2="6.3" y2="3.7" width="0.127" layer="21"/>
+<wire x1="6.3" y1="-3.7" x2="-6.3" y2="-3.7" width="0.127" layer="21"/>
+<text x="9.2" y="-3.2" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="6CH">
+<pin name="P$1" x="-5.08" y="10.16" length="middle"/>
+<pin name="P$2" x="-5.08" y="5.08" length="middle"/>
+<pin name="P$3" x="-5.08" y="0" length="middle"/>
+<pin name="P$4" x="-5.08" y="-5.08" length="middle"/>
+<wire x1="0" y1="12.7" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
+<text x="1.27" y="13.97" size="1.27" layer="94">&gt;NAME</text>
+<text x="-3.81" y="-20.32" size="1.27" layer="94">&gt;VALUE</text>
+<pin name="P$5" x="-5.08" y="-10.16" length="middle"/>
+<pin name="P$6" x="-5.08" y="-15.24" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0430450612" prefix="CN">
+<description>6 ポジション ヘッダ コネクタ 0.118インチ（3.00mm） スルーホール 錫</description>
+<gates>
+<gate name="G$1" symbol="6CH" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="0430450612">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1778,7 +1803,6 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="R3" library="ROHM" deviceset="MCR006" device=""/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="S1" library="1825910-6" deviceset="1825910-6" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
@@ -1794,7 +1818,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <part name="DC8" library="TDK" deviceset="YFF21PC" device=""/>
 <part name="R4" library="ROHM" deviceset="MCR006" device=""/>
 <part name="R5" library="ROHM" deviceset="MCR006" device=""/>
-<part name="CN3" library="Hirose" deviceset="DF11-4DS-2C" device=""/>
+<part name="CN3" library="Hirose" deviceset="DF11-4DP-2DSR" device=""/>
 <part name="S2" library="220AMA16R" deviceset="220AMA16R" device=""/>
 <part name="SW1" library="Nidec" deviceset="CVS-02TB" device=""/>
 <part name="R6" library="ROHM" deviceset="MCR03" device=""/>
@@ -1809,6 +1833,12 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <part name="DC10" library="TDK" deviceset="YFF21PC" device=""/>
 <part name="DC11" library="TDK" deviceset="YFF21PC" device=""/>
 <part name="DC12" library="TDK" deviceset="YFF21PC" device=""/>
+<part name="SW2" library="Panasonic" deviceset="EVQ-PE104K" device=""/>
+<part name="CN6" library="Molex" deviceset="0430450612" device=""/>
+<part name="CN7" library="Molex" deviceset="0430450612" device=""/>
+<part name="DC13" library="TDK" deviceset="YFF21PC" device=""/>
+<part name="DC14" library="TDK" deviceset="YFF21PC" device=""/>
+<part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1864,7 +1894,6 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <instance part="P+9" gate="VCC" x="393.7" y="-55.88"/>
 <instance part="R3" gate="G$1" x="393.7" y="-119.38" rot="R90"/>
 <instance part="SUPPLY15" gate="GND" x="393.7" y="-129.54"/>
-<instance part="S1" gate="G$1" x="396.24" y="-88.9" rot="R270"/>
 <instance part="P+2" gate="VCC" x="246.38" y="81.28"/>
 <instance part="P+3" gate="VCC" x="231.14" y="81.28"/>
 <instance part="P+5" gate="VCC" x="58.42" y="-129.54" rot="R180"/>
@@ -1899,6 +1928,12 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <instance part="DC10" gate="G$1" x="-81.28" y="-68.58" rot="R270"/>
 <instance part="DC11" gate="G$1" x="-71.12" y="-27.94" rot="R270"/>
 <instance part="DC12" gate="G$1" x="-71.12" y="-73.66" rot="R270"/>
+<instance part="SW2" gate="G$1" x="393.7" y="-99.06"/>
+<instance part="CN6" gate="G$1" x="464.82" y="165.1"/>
+<instance part="CN7" gate="G$1" x="464.82" y="124.46"/>
+<instance part="DC13" gate="G$1" x="436.88" y="170.18" rot="R270"/>
+<instance part="DC14" gate="G$1" x="439.42" y="129.54" rot="R270"/>
+<instance part="SUPPLY17" gate="GND" x="431.8" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -2146,6 +2181,24 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <junction x="-76.2" y="-73.66"/>
 <wire x1="-76.2" y1="-73.66" x2="-76.2" y2="-116.84" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="DC13" gate="G$1" pin="GND"/>
+<wire x1="433.76" y1="170.18" x2="431.8" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="431.8" y1="170.18" x2="431.8" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="DC14" gate="G$1" pin="GND"/>
+<wire x1="431.8" y1="160.02" x2="431.8" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="431.8" y1="129.54" x2="431.8" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="431.8" y1="119.38" x2="431.8" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="436.3" y1="129.54" x2="431.8" y2="129.54" width="0.1524" layer="91"/>
+<junction x="431.8" y="129.54"/>
+<pinref part="CN7" gate="G$1" pin="P$4"/>
+<wire x1="459.74" y1="119.38" x2="431.8" y2="119.38" width="0.1524" layer="91"/>
+<junction x="431.8" y="119.38"/>
+<pinref part="CN6" gate="G$1" pin="P$4"/>
+<wire x1="459.74" y1="160.02" x2="431.8" y2="160.02" width="0.1524" layer="91"/>
+<junction x="431.8" y="160.02"/>
+<pinref part="SUPPLY17" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
@@ -2291,6 +2344,16 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <pinref part="DC12" gate="G$1" pin="P$1"/>
 <wire x1="-71.12" y1="-68.58" x2="-71.12" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="DC13" gate="G$1" pin="P$1"/>
+<wire x1="436.88" y1="175.26" x2="436.88" y2="182.88" width="0.1524" layer="91"/>
+<label x="436.88" y="180.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DC14" gate="G$1" pin="P$1"/>
+<wire x1="439.42" y1="134.62" x2="439.42" y2="142.24" width="0.1524" layer="91"/>
+<label x="439.42" y="139.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VDD" class="0">
 <segment>
@@ -2392,8 +2455,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <wire x1="393.7" y1="-76.2" x2="393.7" y2="-81.28" width="0.1524" layer="91"/>
 <junction x="393.7" y="-81.28"/>
 <label x="378.46" y="-81.28" size="1.778" layer="95"/>
-<pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="393.7" y1="-88.9" x2="393.7" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="-93.98" x2="393.7" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -2653,11 +2716,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <net name="N$12" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="S1" gate="G$1" pin="4"/>
-<wire x1="393.7" y1="-114.3" x2="393.7" y2="-109.22" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="3"/>
-<wire x1="393.7" y1="-109.22" x2="396.24" y2="-109.22" width="0.1524" layer="91"/>
-<junction x="393.7" y="-109.22"/>
+<pinref part="SW2" gate="G$1" pin="P"/>
+<wire x1="393.7" y1="-104.14" x2="393.7" y2="-114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC_Z-1" class="0">
@@ -2671,6 +2731,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <label x="-86.36" y="-53.34" size="1.778" layer="95"/>
 <pinref part="IC3" gate="G$1" pin="3Y"/>
 </segment>
+<segment>
+<wire x1="459.74" y1="165.1" x2="444.5" y2="165.1" width="0.1524" layer="91"/>
+<label x="444.5" y="165.1" size="1.778" layer="95"/>
+<pinref part="CN6" gate="G$1" pin="P$3"/>
+</segment>
 </net>
 <net name="ENC_A-2" class="0">
 <segment>
@@ -2682,6 +2747,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <wire x1="-129.54" y1="-88.9" x2="-116.84" y2="-88.9" width="0.1524" layer="91"/>
 <label x="-129.54" y="-88.9" size="1.778" layer="95"/>
 <pinref part="IC4" gate="G$1" pin="1Y"/>
+</segment>
+<segment>
+<wire x1="447.04" y1="134.62" x2="459.74" y2="134.62" width="0.1524" layer="91"/>
+<label x="447.04" y="134.62" size="1.778" layer="95"/>
+<pinref part="CN7" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="ENC_B-2" class="0">
@@ -2695,6 +2765,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <label x="-129.54" y="-93.98" size="1.778" layer="95"/>
 <pinref part="IC4" gate="G$1" pin="2Y"/>
 </segment>
+<segment>
+<wire x1="447.04" y1="129.54" x2="459.74" y2="129.54" width="0.1524" layer="91"/>
+<label x="447.04" y="129.54" size="1.778" layer="95"/>
+<pinref part="CN7" gate="G$1" pin="P$2"/>
+</segment>
 </net>
 <net name="ENC_Z-2" class="0">
 <segment>
@@ -2706,6 +2781,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <wire x1="-91.44" y1="-96.52" x2="-78.74" y2="-96.52" width="0.1524" layer="91"/>
 <label x="-86.36" y="-96.52" size="1.778" layer="95"/>
 <pinref part="IC4" gate="G$1" pin="3Y"/>
+</segment>
+<segment>
+<wire x1="447.04" y1="124.46" x2="459.74" y2="124.46" width="0.1524" layer="91"/>
+<label x="447.04" y="124.46" size="1.778" layer="95"/>
+<pinref part="CN7" gate="G$1" pin="P$3"/>
 </segment>
 </net>
 <net name="ENC_B-1" class="0">
@@ -2719,6 +2799,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <label x="-129.54" y="-50.8" size="1.778" layer="95"/>
 <pinref part="IC3" gate="G$1" pin="2Y"/>
 </segment>
+<segment>
+<wire x1="459.74" y1="170.18" x2="444.5" y2="170.18" width="0.1524" layer="91"/>
+<label x="444.5" y="170.18" size="1.778" layer="95"/>
+<pinref part="CN6" gate="G$1" pin="P$2"/>
+</segment>
 </net>
 <net name="ENC_A-1" class="0">
 <segment>
@@ -2730,6 +2815,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <wire x1="-116.84" y1="-45.72" x2="-129.54" y2="-45.72" width="0.1524" layer="91"/>
 <label x="-129.54" y="-45.72" size="1.778" layer="95"/>
 <pinref part="IC3" gate="G$1" pin="1Y"/>
+</segment>
+<segment>
+<wire x1="459.74" y1="175.26" x2="444.5" y2="175.26" width="0.1524" layer="91"/>
+<label x="444.5" y="175.26" size="1.778" layer="95"/>
+<pinref part="CN6" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="AVDD" class="0">
@@ -2905,7 +2995,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 </segment>
 <segment>
 <pinref part="CN3" gate="G$1" pin="1"/>
-<wire x1="342.9" y1="-93.98" x2="332.74" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="-93.98" x2="330.2" y2="-93.98" width="0.1524" layer="91"/>
+<label x="330.2" y="-93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -2920,7 +3011,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 </segment>
 <segment>
 <pinref part="CN3" gate="G$1" pin="3"/>
-<wire x1="342.9" y1="-99.06" x2="332.74" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="-99.06" x2="330.2" y2="-99.06" width="0.1524" layer="91"/>
+<label x="330.2" y="-99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPLT" class="0">
@@ -2941,7 +3033,8 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 </segment>
 <segment>
 <pinref part="CN3" gate="G$1" pin="2"/>
-<wire x1="342.9" y1="-96.52" x2="332.74" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="-96.52" x2="330.2" y2="-96.52" width="0.1524" layer="91"/>
+<label x="330.2" y="-96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SW1" class="0">
@@ -3232,6 +3325,22 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <pinref part="DC11" gate="G$1" pin="P$2"/>
 <wire x1="-60.96" y1="-43.18" x2="-71.12" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="-43.18" x2="-71.12" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="DC13" gate="G$1" pin="P$2"/>
+<pinref part="CN6" gate="G$1" pin="P$5"/>
+<wire x1="436.88" y1="165.1" x2="436.88" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="436.88" y1="154.94" x2="459.74" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="DC14" gate="G$1" pin="P$2"/>
+<pinref part="CN7" gate="G$1" pin="P$5"/>
+<wire x1="439.42" y1="124.46" x2="439.42" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="439.42" y1="114.3" x2="459.74" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
