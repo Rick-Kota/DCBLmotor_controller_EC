@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -94,6 +94,17 @@
 <text x="-6.17" y="-4.3" size="1.016" layer="21">&gt;VALUE</text>
 <wire x1="-6" y1="2" x2="-6" y2="-2" width="0.127" layer="21"/>
 </package>
+<package name="T356">
+<pad name="P$+" x="-2.54" y="0" drill="0.6" shape="square"/>
+<pad name="P$-" x="2.54" y="0" drill="0.6"/>
+<circle x="0" y="0" radius="5.08" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="4.1" x2="-2.6" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-2" x2="-1.7" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-2" x2="-1.7" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="-2" x2="-1.7" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="-2" x2="-1.7" y2="-2.6" width="0.127" layer="21"/>
+<text x="6.35" y="-3.81" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C">
@@ -144,6 +155,23 @@
 <connects>
 <connect gate="G$1" pin="+" pad="P$+"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="T356L107K016AT" prefix="C">
+<description>100µF 絶縁保護加工 タンタルコンデンサ 16V ラジアル 800ミリオーム</description>
+<gates>
+<gate name="G$1" symbol="C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="T356">
+<connects>
+<connect gate="G$1" pin="+" pad="P$+"/>
+<connect gate="G$1" pin="2" pad="P$-"/>
 </connects>
 <technologies>
 <technology name=""/>
