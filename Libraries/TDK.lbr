@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.1">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -271,6 +271,24 @@ SMDリード付き</description>
 <device name="" package="YFF15PC">
 <connects>
 <connect gate="G$1" pin="GND" pad="P$3 P$4"/>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="YFF21PC1E104MT000N" prefix="DC">
+<description>0.1µF Feed Through Capacitor 25V 2A 80 mOhm 0805 (2012 Metric), 4 PC Pad</description>
+<gates>
+<gate name="G$1" symbol="DC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="YFF21PC">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND1 GND2"/>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>

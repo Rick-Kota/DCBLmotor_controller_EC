@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.1">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -494,8 +494,8 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="YFF21PC" prefix="DC">
-<description>貫通コンデンサYFF21シリーズ</description>
+<deviceset name="YFF21PC1E104MT000N" prefix="DC">
+<description>0.1µF Feed Through Capacitor 25V 2A 80 mOhm 0805 (2012 Metric), 4 PC Pad</description>
 <gates>
 <gate name="G$1" symbol="DC" x="0" y="0"/>
 </gates>
@@ -820,15 +820,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-0.1" y1="-0.6" x2="-0.1" y2="0.6" width="0.127" layer="21"/>
 <text x="0.9" y="-1" size="0.254" layer="21">&gt;NAME</text>
 </package>
-<package name="MCR006">
-<smd name="P$1" x="0" y="0" dx="0.27" dy="0.3" layer="1" rot="R180"/>
-<smd name="P$2" x="0.57" y="0" dx="0.27" dy="0.3" layer="1" rot="R180"/>
-<wire x1="-0.01" y1="0.15" x2="0.59" y2="0.15" width="0.127" layer="21"/>
-<wire x1="0.59" y1="0.15" x2="0.59" y2="-0.15" width="0.127" layer="21"/>
-<wire x1="0.59" y1="-0.15" x2="-0.01" y2="-0.15" width="0.127" layer="21"/>
-<wire x1="-0.01" y1="-0.15" x2="-0.01" y2="0.15" width="0.127" layer="21"/>
-<text x="-0.03" y="-0.51" size="0.254" layer="21">&gt;NAME</text>
-</package>
 <package name="MCR03">
 <smd name="P$1" x="0" y="0" dx="0.5" dy="0.8" layer="1"/>
 <smd name="P$2" x="1.5" y="0" dx="0.5" dy="0.8" layer="1"/>
@@ -874,22 +865,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </gates>
 <devices>
 <device name="" package="KTR10">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCR006" prefix="R">
-<gates>
-<gate name="G$1" symbol="R" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MCR006">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -2419,6 +2394,84 @@ Source:
 </deviceset>
 </devicesets>
 </library>
+<library name="VISHAY">
+<packages>
+<package name="0603">
+<smd name="P$1" x="-0.75" y="0" dx="0.5" dy="0.9" layer="1"/>
+<smd name="P$2" x="0.75" y="0" dx="0.5" dy="0.9" layer="1"/>
+<wire x1="-1.1" y1="-0.6" x2="-1.1" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="0.6" x2="1.1" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0.6" x2="1.1" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="1.1" y1="-0.6" x2="-1.1" y2="-0.6" width="0.127" layer="21"/>
+<text x="-1" y="-1.1" size="0.4064" layer="21">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="R">
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0.889" x2="-2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<text x="-3.81" y="1.3716" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CRCW060360R4FKEA" prefix="R">
+<description>60.4 Ohms ±1% 0.1W、1/10W チップ抵抗 0603（1608メートル法） 車載用AEC-Q200 厚膜</description>
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRCW0603100RJNEAC" prefix="R">
+<description>100 Ohms ±5% 0.1W、1/10W チップ抵抗 0603（1608メートル法） 厚膜</description>
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRCW06031K00JNEAC" prefix="R">
+<description>1 kOhms ±5% 0.1W、1/10W チップ抵抗 0603（1608メートル法） 厚膜</description>
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2430,11 +2483,11 @@ Source:
 </classes>
 <parts>
 <part name="IC1" library="TOSHIBA" deviceset="TMPM370FYFG" device=""/>
-<part name="DC1" library="TDK" deviceset="YFF21PC" device=""/>
-<part name="DC5" library="TDK" deviceset="YFF21PC" device=""/>
-<part name="DC4" library="TDK" deviceset="YFF21PC" device=""/>
-<part name="DC3" library="TDK" deviceset="YFF21PC" device=""/>
-<part name="DC2" library="TDK" deviceset="YFF21PC" device=""/>
+<part name="DC1" library="TDK" deviceset="YFF21PC1E104MT000N" device=""/>
+<part name="DC5" library="TDK" deviceset="YFF21PC1E104MT000N" device=""/>
+<part name="DC4" library="TDK" deviceset="YFF21PC1E104MT000N" device=""/>
+<part name="DC3" library="TDK" deviceset="YFF21PC1E104MT000N" device=""/>
+<part name="DC2" library="TDK" deviceset="YFF21PC1E104MT000N" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -2470,9 +2523,8 @@ Source:
 <part name="L1" library="LQW21HN1R0J00L" deviceset="LQW21HN1R0J00L" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R2" library="ROHM" deviceset="MCR006" device=""/>
+<part name="R2" library="VISHAY" deviceset="CRCW06031K00JNEAC" device=""/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="R3" library="ROHM" deviceset="MCR006" device=""/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
@@ -2487,33 +2539,32 @@ Source:
 <part name="VR2" library="Bourns" deviceset="3314J-1-104E" device=""/>
 <part name="IC2" library="MicroChip" deviceset="MCP2561FD-E/MF" device=""/>
 <part name="DC8" library="TDK" deviceset="YFF15PC1C104MT000N" device=""/>
-<part name="R4" library="ROHM" deviceset="MCR006" device=""/>
-<part name="R5" library="ROHM" deviceset="MCR006" device=""/>
+<part name="R4" library="VISHAY" deviceset="CRCW060360R4FKEA" device=""/>
+<part name="R5" library="VISHAY" deviceset="CRCW060360R4FKEA" device=""/>
 <part name="CN3" library="Hirose" deviceset="DF11-4DP-2DSR" device=""/>
 <part name="S2" library="220AMA16R" deviceset="220AMA16R" device=""/>
 <part name="SW1" library="Nidec" deviceset="CVS-02TB" device=""/>
-<part name="R6" library="ROHM" deviceset="MCR03" device=""/>
-<part name="R7" library="ROHM" deviceset="MCR03" device=""/>
+<part name="R6" library="VISHAY" deviceset="CRCW06031K00JNEAC" device=""/>
+<part name="R7" library="VISHAY" deviceset="CRCW06031K00JNEAC" device=""/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="RA1" library="Pana_Chip_RA" deviceset="EXB-38V103JV" device=""/>
 <part name="CN4" library="Hirose" deviceset="HIF3FC-10PA-2.54DSA(71)" device=""/>
 <part name="CN5" library="Hirose" deviceset="HIF3FC-10PA-2.54DSA(71)" device=""/>
 <part name="IC3" library="AM26C32CD" deviceset="AM26C32CD" device=""/>
 <part name="IC4" library="AM26C32CD" deviceset="AM26C32CD" device=""/>
-<part name="DC9" library="TDK" deviceset="YFF21PC" device=""/>
-<part name="DC10" library="TDK" deviceset="YFF21PC" device=""/>
-<part name="DC11" library="TDK" deviceset="YFF21PC" device=""/>
-<part name="DC12" library="TDK" deviceset="YFF21PC" device=""/>
+<part name="DC9" library="TDK" deviceset="YFF21PC1E104MT000N" device=""/>
+<part name="DC10" library="TDK" deviceset="YFF21PC1E104MT000N" device=""/>
+<part name="DC11" library="TDK" deviceset="YFF21PC1E104MT000N" device=""/>
+<part name="DC12" library="TDK" deviceset="YFF21PC1E104MT000N" device=""/>
 <part name="SW2" library="Panasonic" deviceset="EVQ-PE104K" device=""/>
 <part name="CN6" library="Molex" deviceset="0430450612" device=""/>
 <part name="CN7" library="Molex" deviceset="0430450612" device=""/>
-<part name="DC13" library="TDK" deviceset="YFF21PC" device=""/>
-<part name="DC14" library="TDK" deviceset="YFF21PC" device=""/>
+<part name="DC13" library="TDK" deviceset="YFF21PC1E104MT000N" device=""/>
+<part name="DC14" library="TDK" deviceset="YFF21PC1E104MT000N" device=""/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="LED1" library="Citizen" deviceset="CL-340T-SD-T" device=""/>
 <part name="LED2" library="Citizen" deviceset="CL-340T-SD-T" device=""/>
 <part name="LED3" library="Citizen" deviceset="CL-196YG-CD-T" device=""/>
-<part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="CR5" library="ON Semiconductor" deviceset="NSI50010YT1G" device=""/>
@@ -2527,7 +2578,7 @@ Source:
 <part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="IC5" library="LT" deviceset="LTC2862A" device=""/>
 <part name="DC15" library="TDK" deviceset="YFF15PC1C104MT000N" device=""/>
-<part name="R8" library="ROHM" deviceset="MCR006" device=""/>
+<part name="R8" library="VISHAY" deviceset="CRCW0603100RJNEAC" device=""/>
 <part name="DC6" library="TDK" deviceset="YFF15PC1C104MT000N" device=""/>
 <part name="DC7" library="TDK" deviceset="YFF15PC1C104MT000N" device=""/>
 <part name="CN9" library="jst-xh" deviceset="B4B-XH-A" device=""/>
@@ -2587,7 +2638,6 @@ Source:
 <instance part="SUPPLY14" gate="GND" x="76.2" y="134.62" rot="R180"/>
 <instance part="R2" gate="G$1" x="393.7" y="-71.12" rot="R90"/>
 <instance part="P+9" gate="VCC" x="393.7" y="-55.88"/>
-<instance part="R3" gate="G$1" x="393.7" y="-119.38" rot="R90"/>
 <instance part="SUPPLY15" gate="GND" x="393.7" y="-129.54"/>
 <instance part="P+2" gate="VCC" x="246.38" y="81.28"/>
 <instance part="P+3" gate="VCC" x="231.14" y="81.28"/>
@@ -2632,7 +2682,6 @@ Source:
 <instance part="LED1" gate="G$1" x="-111.76" y="182.88"/>
 <instance part="LED2" gate="G$1" x="-86.36" y="182.88"/>
 <instance part="LED3" gate="G$1" x="408.94" y="-76.2"/>
-<instance part="P+10" gate="VCC" x="408.94" y="-55.88"/>
 <instance part="SUPPLY18" gate="GND" x="408.94" y="-129.54"/>
 <instance part="P+11" gate="VCC" x="-111.76" y="226.06"/>
 <instance part="CR5" gate="G$1" x="408.94" y="-114.3" rot="R90"/>
@@ -2816,9 +2865,11 @@ Source:
 <pinref part="DC6" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY15" gate="GND" pin="GND"/>
 <wire x1="393.7" y1="-124.46" x2="393.7" y2="-127" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="G$1" pin="P"/>
+<wire x1="393.7" y1="-104.14" x2="393.7" y2="-127" width="0.1524" layer="91"/>
+<junction x="393.7" y="-127"/>
 </segment>
 <segment>
 <pinref part="VR1" gate="G$1" pin="2"/>
@@ -2983,70 +3034,6 @@ Source:
 <pinref part="P+9" gate="VCC" pin="VCC"/>
 <wire x1="393.7" y1="-66.04" x2="393.7" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<wire x1="294.64" y1="66.04" x2="294.64" y2="71.12" width="0.1524" layer="91"/>
-<label x="294.64" y="86.36" size="1.778" layer="95"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="294.64" y1="71.12" x2="294.64" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="66.04" x2="304.8" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="71.12" x2="294.64" y2="71.12" width="0.1524" layer="91"/>
-<junction x="294.64" y="71.12"/>
-</segment>
-<segment>
-<pinref part="RA1" gate="-4" pin="1"/>
-<wire x1="340.36" y1="142.24" x2="340.36" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="149.86" x2="340.36" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="157.48" x2="340.36" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="165.1" x2="340.36" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="165.1" x2="340.36" y2="165.1" width="0.1524" layer="91"/>
-<junction x="340.36" y="165.1"/>
-<pinref part="RA1" gate="-3" pin="1"/>
-<wire x1="332.74" y1="157.48" x2="340.36" y2="157.48" width="0.1524" layer="91"/>
-<junction x="340.36" y="157.48"/>
-<label x="340.36" y="175.26" size="1.778" layer="95"/>
-<pinref part="RA1" gate="-2" pin="1"/>
-<wire x1="340.36" y1="142.24" x2="332.74" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="RA1" gate="-1" pin="1"/>
-<wire x1="332.74" y1="149.86" x2="340.36" y2="149.86" width="0.1524" layer="91"/>
-<junction x="340.36" y="149.86"/>
-</segment>
-<segment>
-<pinref part="P+10" gate="VCC" pin="VCC"/>
-<wire x1="408.94" y1="-58.42" x2="408.94" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
-</segment>
-<segment>
-<pinref part="P+11" gate="VCC" pin="VCC"/>
-<wire x1="-111.76" y1="223.52" x2="-111.76" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="B_A"/>
-<pinref part="LED2" gate="G$1" pin="A_G"/>
-<wire x1="-111.76" y1="200.66" x2="-111.76" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="200.66" x2="-106.68" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="200.66" x2="-101.6" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="200.66" x2="-86.36" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="200.66" x2="-81.28" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="200.66" x2="-76.2" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="200.66" x2="-76.2" y2="187.96" width="0.1524" layer="91"/>
-<junction x="-111.76" y="200.66"/>
-<pinref part="LED2" gate="G$1" pin="R_A"/>
-<wire x1="-81.28" y1="187.96" x2="-81.28" y2="200.66" width="0.1524" layer="91"/>
-<junction x="-81.28" y="200.66"/>
-<pinref part="LED2" gate="G$1" pin="B_A"/>
-<wire x1="-86.36" y1="187.96" x2="-86.36" y2="200.66" width="0.1524" layer="91"/>
-<junction x="-86.36" y="200.66"/>
-<pinref part="LED1" gate="G$1" pin="A_G"/>
-<wire x1="-101.6" y1="187.96" x2="-101.6" y2="200.66" width="0.1524" layer="91"/>
-<junction x="-101.6" y="200.66"/>
-<pinref part="LED1" gate="G$1" pin="R_A"/>
-<wire x1="-106.68" y1="187.96" x2="-106.68" y2="200.66" width="0.1524" layer="91"/>
-<junction x="-106.68" y="200.66"/>
-</segment>
-<segment>
-<pinref part="CN8" gate="G$1" pin="P$1"/>
-<wire x1="157.48" y1="83.82" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="P+12" gate="VCC" pin="VCC"/>
-</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -3150,6 +3137,70 @@ Source:
 <pinref part="0R2" gate="G$1" pin="2"/>
 <wire x1="350.52" y1="-20.32" x2="330.2" y2="-20.32" width="0.1524" layer="91"/>
 <label x="332.74" y="-20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RA1" gate="-4" pin="1"/>
+<wire x1="340.36" y1="142.24" x2="340.36" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="149.86" x2="340.36" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="157.48" x2="340.36" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="165.1" x2="340.36" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="165.1" x2="340.36" y2="165.1" width="0.1524" layer="91"/>
+<junction x="340.36" y="165.1"/>
+<pinref part="RA1" gate="-3" pin="1"/>
+<wire x1="332.74" y1="157.48" x2="340.36" y2="157.48" width="0.1524" layer="91"/>
+<junction x="340.36" y="157.48"/>
+<label x="340.36" y="175.26" size="1.778" layer="95"/>
+<pinref part="RA1" gate="-2" pin="1"/>
+<wire x1="340.36" y1="142.24" x2="332.74" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="RA1" gate="-1" pin="1"/>
+<wire x1="332.74" y1="149.86" x2="340.36" y2="149.86" width="0.1524" layer="91"/>
+<junction x="340.36" y="149.86"/>
+</segment>
+<segment>
+<pinref part="CN8" gate="G$1" pin="P$1"/>
+<wire x1="157.48" y1="83.82" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="P+12" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="294.64" y1="66.04" x2="294.64" y2="71.12" width="0.1524" layer="91"/>
+<label x="294.64" y="86.36" size="1.778" layer="95"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="71.12" x2="294.64" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="66.04" x2="304.8" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="71.12" x2="294.64" y2="71.12" width="0.1524" layer="91"/>
+<junction x="294.64" y="71.12"/>
+</segment>
+<segment>
+<wire x1="408.94" y1="-58.42" x2="408.94" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<label x="408.94" y="-58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="P+11" gate="VCC" pin="VCC"/>
+<wire x1="-111.76" y1="223.52" x2="-111.76" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="B_A"/>
+<pinref part="LED2" gate="G$1" pin="A_G"/>
+<wire x1="-111.76" y1="200.66" x2="-111.76" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="200.66" x2="-106.68" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="200.66" x2="-101.6" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="200.66" x2="-86.36" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="200.66" x2="-81.28" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="200.66" x2="-76.2" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="200.66" x2="-76.2" y2="187.96" width="0.1524" layer="91"/>
+<junction x="-111.76" y="200.66"/>
+<pinref part="LED2" gate="G$1" pin="R_A"/>
+<wire x1="-81.28" y1="187.96" x2="-81.28" y2="200.66" width="0.1524" layer="91"/>
+<junction x="-81.28" y="200.66"/>
+<pinref part="LED2" gate="G$1" pin="B_A"/>
+<wire x1="-86.36" y1="187.96" x2="-86.36" y2="200.66" width="0.1524" layer="91"/>
+<junction x="-86.36" y="200.66"/>
+<pinref part="LED1" gate="G$1" pin="A_G"/>
+<wire x1="-101.6" y1="187.96" x2="-101.6" y2="200.66" width="0.1524" layer="91"/>
+<junction x="-101.6" y="200.66"/>
+<pinref part="LED1" gate="G$1" pin="R_A"/>
+<wire x1="-106.68" y1="187.96" x2="-106.68" y2="200.66" width="0.1524" layer="91"/>
+<junction x="-106.68" y="200.66"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -3522,13 +3573,6 @@ Source:
 <pinref part="IC1" gate="G$1" pin="YO1/PG3"/>
 <wire x1="63.5" y1="-7.62" x2="63.5" y2="-20.32" width="0.1524" layer="91"/>
 <label x="63.5" y="-17.78" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="SW2" gate="G$1" pin="P"/>
-<wire x1="393.7" y1="-104.14" x2="393.7" y2="-114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC_Z-1" class="0">
@@ -4360,6 +4404,24 @@ Source:
 <pinref part="0R1" gate="G$1" pin="1"/>
 <pinref part="CN9" gate="G$1" pin="1"/>
 <wire x1="347.98" y1="-17.78" x2="373.38" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RS_DIR" class="0">
+<segment>
+<pinref part="IC5" gate="G$1" pin="DE"/>
+<wire x1="254" y1="-30.48" x2="251.46" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="-30.48" x2="251.46" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="G$1" pin="RE"/>
+<wire x1="251.46" y1="-22.86" x2="251.46" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="-15.24" x2="254" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="-22.86" x2="233.68" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="251.46" y="-22.86"/>
+<label x="233.68" y="-22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="TB6IN/RXD1/PA6"/>
+<wire x1="-5.08" y1="58.42" x2="-17.78" y2="58.42" width="0.1524" layer="91"/>
+<label x="-17.78" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
