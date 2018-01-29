@@ -820,15 +820,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-0.1" y1="-0.6" x2="-0.1" y2="0.6" width="0.127" layer="21"/>
 <text x="0.9" y="-1" size="0.254" layer="21">&gt;NAME</text>
 </package>
-<package name="MCR03">
-<smd name="P$1" x="0" y="0" dx="0.5" dy="0.8" layer="1"/>
-<smd name="P$2" x="1.5" y="0" dx="0.5" dy="0.8" layer="1"/>
-<wire x1="-0.1" y1="0.5" x2="1.6" y2="0.5" width="0.127" layer="21"/>
-<wire x1="1.6" y1="0.5" x2="1.6" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-0.5" x2="-0.1" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-0.5" x2="-0.1" y2="0.5" width="0.127" layer="21"/>
-<text x="-1.23" y="-1.492" size="0.8128" layer="21">&gt;NAME</text>
-</package>
 </packages>
 <symbols>
 <symbol name="R">
@@ -865,22 +856,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </gates>
 <devices>
 <device name="" package="KTR10">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCR03" prefix="R">
-<gates>
-<gate name="G$1" symbol="R" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MCR03">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -2470,6 +2445,23 @@ Source:
 </device>
 </devices>
 </deviceset>
+<deviceset name="CRCW0603240RFKEA" prefix="R">
+<description>240 Ohms ±1% 0.1W、1/10W チップ抵抗 0603（1608メートル法） 車載用AEC-Q200 厚膜</description>
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -2519,7 +2511,7 @@ Source:
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="CN1" library="Hirose" deviceset="DF11-16DP-2DSA" device=""/>
 <part name="CN2" library="Hirose" deviceset="DF11-16DP-2DSA" device=""/>
-<part name="R1" library="ROHM" deviceset="MCR03" device=""/>
+<part name="R1" library="VISHAY" deviceset="CRCW0603240RFKEA" device=""/>
 <part name="L1" library="LQW21HN1R0J00L" deviceset="LQW21HN1R0J00L" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
