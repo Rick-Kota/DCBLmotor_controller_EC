@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.1">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -112,7 +112,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="NSIC2020JBT3G" prefix="CR">
+<deviceset name="NSIC2020JBT3G" prefix="C/R">
 <description>Current Regulator Regulator High/Low-Side 20mA SMB</description>
 <gates>
 <gate name="G$1" symbol="CR" x="0" y="0"/>
@@ -129,7 +129,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="NSI50010YT1G" prefix="CR">
+<deviceset name="NSI50010YT1G" prefix="C/R">
 <description>Current Regulator Regulator High/Low-Side 10mA SOD-123</description>
 <gates>
 <gate name="G$1" symbol="CR" x="0" y="0"/>

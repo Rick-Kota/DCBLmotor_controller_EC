@@ -2042,7 +2042,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="NSI50010YT1G" prefix="CR">
+<deviceset name="NSI50010YT1G" prefix="C/R">
 <description>Current Regulator Regulator High/Low-Side 10mA SOD-123</description>
 <gates>
 <gate name="G$1" symbol="CR" x="0" y="0"/>
@@ -2445,8 +2445,8 @@ Source:
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRCW0603240RFKEA" prefix="R">
-<description>240 Ohms ±1% 0.1W、1/10W チップ抵抗 0603（1608メートル法） 車載用AEC-Q200 厚膜</description>
+<deviceset name="CRCW060382R0JNEA" prefix="R">
+<description>82 Ohms ±5% 0.1W、1/10W チップ抵抗 0603（1608メートル法） 車載用AEC-Q200 厚膜</description>
 <gates>
 <gate name="G$1" symbol="R" x="0" y="0"/>
 </gates>
@@ -2511,7 +2511,7 @@ Source:
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="CN1" library="Hirose" deviceset="DF11-16DP-2DSA" device=""/>
 <part name="CN2" library="Hirose" deviceset="DF11-16DP-2DSA" device=""/>
-<part name="R1" library="VISHAY" deviceset="CRCW0603240RFKEA" device=""/>
+<part name="R1" library="VISHAY" deviceset="CRCW060382R0JNEA" device=""/>
 <part name="L1" library="LQW21HN1R0J00L" deviceset="LQW21HN1R0J00L" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>

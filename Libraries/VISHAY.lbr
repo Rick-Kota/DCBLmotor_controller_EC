@@ -258,6 +258,23 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="CRCW060382R0JNEA" prefix="R">
+<description>82 Ohms ±5% 0.1W、1/10W チップ抵抗 0603（1608メートル法） 車載用AEC-Q200 厚膜</description>
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
