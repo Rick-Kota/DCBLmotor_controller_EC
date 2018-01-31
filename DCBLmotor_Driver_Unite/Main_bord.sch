@@ -471,6 +471,15 @@
 <wire x1="0.75" y1="-0.5" x2="-0.75" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="-0.75" y1="-0.5" x2="-0.75" y2="0.5" width="0.127" layer="21"/>
 </package>
+<package name="0603">
+<smd name="P$1" x="-0.75" y="0" dx="0.5" dy="0.9" layer="1"/>
+<smd name="P$2" x="0.75" y="0" dx="0.5" dy="0.9" layer="1"/>
+<wire x1="-1.1" y1="-0.6" x2="-1.1" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="0.6" x2="1.1" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0.6" x2="1.1" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="1.1" y1="-0.6" x2="-1.1" y2="-0.6" width="0.127" layer="21"/>
+<text x="-1" y="-1.1" size="0.4064" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DC">
@@ -591,6 +600,23 @@
 <connect gate="G$1" pin="GND" pad="P$3 P$4"/>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CGA3E2X7R1H104K080AA" prefix="C">
+<description>0.1µF ±10% 50V セラミックコンデンサ X7R 0603（1608メートル法）</description>
+<gates>
+<gate name="G$1" symbol="C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -800,65 +826,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <connect gate="G$1" pin="TRACK/SS" pad="A2"/>
 <connect gate="G$1" pin="VIN" pad="D5 E5"/>
 <connect gate="G$1" pin="VOUT" pad="C1 D1 D2 E1 E2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="ROHM">
-<packages>
-<package name="KTR10">
-<smd name="P$1" x="0" y="0" dx="1.15" dy="0.7" layer="1" rot="R90"/>
-<smd name="P$2" x="1.9" y="0" dx="1.15" dy="0.7" layer="1" rot="R90"/>
-<wire x1="-0.1" y1="0.6" x2="2" y2="0.6" width="0.127" layer="21"/>
-<wire x1="2" y1="0.6" x2="2" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="2" y1="-0.6" x2="-0.1" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-0.6" x2="-0.1" y2="0.6" width="0.127" layer="21"/>
-<text x="0.9" y="-1" size="0.254" layer="21">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="R">
-<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0.889" x2="-2.54" y2="-0.889" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
-<text x="-3.81" y="1.3716" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="KTR10EZPF1332" prefix="RS">
-<gates>
-<gate name="G$1" symbol="R" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="KTR10">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="KTR10EZPF8251" prefix="RS">
-<gates>
-<gate name="G$1" symbol="R" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="KTR10">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1921,6 +1888,15 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <text x="-2" y="2.5" size="0.8128" layer="21">&gt;NAME</text>
 <text x="-3" y="-3" size="0.8128" layer="21">&gt;VALUE</text>
 </package>
+<package name="0603">
+<smd name="P$1" x="-0.75" y="0" dx="0.5" dy="0.9" layer="1"/>
+<smd name="P$2" x="0.75" y="0" dx="0.5" dy="0.9" layer="1"/>
+<wire x1="-1.1" y1="-0.6" x2="-1.1" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="0.6" x2="1.1" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0.6" x2="1.1" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="1.1" y1="-0.6" x2="-1.1" y2="-0.6" width="0.127" layer="21"/>
+<text x="-1" y="-1.1" size="0.4064" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="S">
@@ -1931,6 +1907,16 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <text x="-2.54" y="-2.54" size="1.778" layer="95" rot="R90">&gt;PART</text>
 <pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+<symbol name="R">
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0.889" x2="-2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<text x="-3.81" y="1.3716" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1944,6 +1930,23 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/am26c32.pdf"&gt; Datasheet 
 <connects>
 <connect gate="G$1" pin="P" pad="P$1"/>
 <connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ERA-3AEB8251V" prefix="R">
+<description>8.25 kOhms ±0.1% 0.1W、1/10W チップ抵抗 0603（1608メートル法） 車載用AEC-Q200 薄膜</description>
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2445,23 +2448,6 @@ Source:
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRCW060382R0JNEA" prefix="R">
-<description>82 Ohms ±5% 0.1W、1/10W チップ抵抗 0603（1608メートル法） 車載用AEC-Q200 厚膜</description>
-<gates>
-<gate name="G$1" symbol="R" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -2484,8 +2470,6 @@ Source:
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="RS1" library="ROHM" deviceset="KTR10EZPF1332" device=""/>
-<part name="RS2" library="ROHM" deviceset="KTR10EZPF8251" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C7" library="TDK" deviceset="C2012JB0J476M125AC" device=""/>
 <part name="C8" library="TDK" deviceset="C2012JB0J476M125AC" device=""/>
@@ -2510,7 +2494,7 @@ Source:
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="CN1" library="Hirose" deviceset="DF11-16DP-2DSA" device=""/>
 <part name="CN2" library="Hirose" deviceset="DF11-16DP-2DSA" device=""/>
-<part name="R1" library="VISHAY" deviceset="CRCW060382R0JNEA" device=""/>
+<part name="R1" library="Keystone" deviceset="5106" device=""/>
 <part name="L1" library="LQW21HN1R0J00L" deviceset="LQW21HN1R0J00L" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -2579,6 +2563,8 @@ Source:
 <part name="CN10" library="jst-xh" deviceset="B2B-XH-A" device=""/>
 <part name="C5" library="KEMET" deviceset="T356L107K016AT" device=""/>
 <part name="DC-DC1" library="LT" deviceset="LTM4623IY" device=""/>
+<part name="C6" library="TDK" deviceset="CGA3E2X7R1H104K080AA" device=""/>
+<part name="R3" library="Panasonic" deviceset="ERA-3AEB8251V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2597,8 +2583,6 @@ Source:
 <instance part="SUPPLY2" gate="GND" x="231.14" y="20.32"/>
 <instance part="SUPPLY3" gate="GND" x="416.56" y="-17.78"/>
 <instance part="SUPPLY5" gate="GND" x="78.74" y="-127"/>
-<instance part="RS1" gate="G$1" x="429.26" y="5.08" rot="R90"/>
-<instance part="RS2" gate="G$1" x="434.34" y="-2.54" rot="R90"/>
 <instance part="SUPPLY8" gate="GND" x="431.8" y="-17.78"/>
 <instance part="C7" gate="G$1" x="441.96" y="20.32"/>
 <instance part="C8" gate="G$1" x="447.04" y="12.7"/>
@@ -2696,6 +2680,8 @@ Source:
 <instance part="CN10" gate="G$1" x="467.36" y="220.98"/>
 <instance part="C5" gate="G$1" x="439.42" y="220.98"/>
 <instance part="DC-DC1" gate="G$1" x="396.24" y="33.02"/>
+<instance part="C6" gate="G$1" x="370.84" y="7.62"/>
+<instance part="R3" gate="G$1" x="431.8" y="12.7" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2730,23 +2716,18 @@ Source:
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="RS1" gate="G$1" pin="2"/>
-<wire x1="429.26" y1="0" x2="429.26" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="RS2" gate="G$1" pin="2"/>
-<wire x1="434.34" y1="-7.62" x2="434.34" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="434.34" y1="-10.16" x2="431.8" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
-<wire x1="431.8" y1="-10.16" x2="429.26" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="431.8" y1="-10.16" x2="431.8" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="431.8" y="-10.16"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="434.34" y1="-10.16" x2="441.96" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="431.8" y1="-10.16" x2="441.96" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="441.96" y1="-10.16" x2="447.04" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="447.04" y1="-10.16" x2="447.04" y2="7.62" width="0.1524" layer="91"/>
-<junction x="434.34" y="-10.16"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="441.96" y1="15.24" x2="441.96" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="441.96" y="-10.16"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="431.8" y1="7.62" x2="431.8" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="431.8" y="-10.16"/>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
@@ -2995,21 +2976,12 @@ Source:
 <wire x1="414.02" y1="17.78" x2="416.56" y2="17.78" width="0.1524" layer="91"/>
 <junction x="416.56" y="17.78"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
-<wire x1="416.56" y1="-15.24" x2="416.56" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="RS1" gate="G$1" pin="1"/>
-<wire x1="421.64" y1="17.78" x2="429.26" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="429.26" y1="17.78" x2="429.26" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="RS2" gate="G$1" pin="1"/>
-<wire x1="421.64" y1="22.86" x2="434.34" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="434.34" y1="22.86" x2="434.34" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="-15.24" x2="416.56" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="416.56" y1="-2.54" x2="416.56" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="2.54" x2="370.84" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="-2.54" x2="416.56" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="416.56" y="-2.54"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -4415,6 +4387,31 @@ Source:
 <pinref part="IC1" gate="G$1" pin="TB6IN/RXD1/PA6"/>
 <wire x1="-5.08" y1="58.42" x2="-17.78" y2="58.42" width="0.1524" layer="91"/>
 <label x="-17.78" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="DC-DC1" gate="G$1" pin="TRACK/SS"/>
+<wire x1="370.84" y1="10.16" x2="370.84" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="20.32" x2="378.46" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="DC-DC1" gate="G$1" pin="INTVCC"/>
+<wire x1="378.46" y1="35.56" x2="373.38" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="35.56" x2="373.38" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="DC-DC1" gate="G$1" pin="MODE"/>
+<wire x1="373.38" y1="33.02" x2="378.46" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="DC-DC1" gate="G$1" pin="FB"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="414.02" y1="33.02" x2="431.8" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="431.8" y1="33.02" x2="431.8" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
