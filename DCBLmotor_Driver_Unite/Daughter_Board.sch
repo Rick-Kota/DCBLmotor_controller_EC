@@ -906,18 +906,19 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 </deviceset>
 </devicesets>
 </library>
-<library name="KEMET">
+<library name="OS-CON">
 <packages>
-<package name="T494_X">
-<smd name="P$+" x="-3.12" y="0" dx="2.37" dy="2.43" layer="1"/>
-<smd name="P$2" x="3.12" y="0" dx="2.37" dy="2.43" layer="1"/>
-<wire x1="-5" y1="2" x2="-5" y2="-2" width="0.127" layer="21"/>
-<wire x1="-5" y1="-2" x2="5" y2="-2" width="0.127" layer="21"/>
-<wire x1="5" y1="-2" x2="5" y2="2" width="0.127" layer="21"/>
-<wire x1="5" y1="2" x2="-5" y2="2" width="0.127" layer="21"/>
-<text x="-6.17" y="-3.2" size="1.016" layer="21">&gt;NAME</text>
-<text x="-6.17" y="-4.3" size="1.016" layer="21">&gt;VALUE</text>
-<wire x1="-6" y1="2" x2="-6" y2="-2" width="0.127" layer="21"/>
+<package name="F12">
+<smd name="P$-" x="-4.3" y="0" dx="6.4" dy="1.4" layer="1"/>
+<smd name="P$+" x="4.3" y="0" dx="6.4" dy="1.4" layer="1"/>
+<circle x="0" y="0" radius="5" width="0.2" layer="21"/>
+<wire x1="1.9" y1="5.5" x2="-5.5" y2="5.5" width="0.2" layer="21"/>
+<wire x1="-5.5" y1="5.5" x2="-5.5" y2="-5.5" width="0.2" layer="21"/>
+<wire x1="-5.5" y1="-5.5" x2="1.9" y2="-5.5" width="0.2" layer="21"/>
+<wire x1="5.5" y1="-1.9" x2="5.5" y2="1.9" width="0.2" layer="21"/>
+<wire x1="1.9" y1="5.5" x2="5.5" y2="1.9" width="0.2" layer="21"/>
+<wire x1="1.9" y1="-5.5" x2="5.5" y2="-1.9" width="0.2" layer="21"/>
+<text x="-4.5" y="-7" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -942,16 +943,16 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="T494X107M025AT" prefix="C">
-<description>100µF 成形 タンタルコンデンサ 25V 2917（7343メートル法） 250ミリオーム</description>
+<deviceset name="50SVPF68M" prefix="OS-CON">
+<description>68µF 50V Aluminum Polymer Capacitor Radial, Can - SMD 20 mOhm 5000 Hrs @ 105°C</description>
 <gates>
-<gate name="G$1" symbol="C" x="0" y="-2.54"/>
+<gate name="G$1" symbol="C" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="T494_X">
+<device name="" package="F12">
 <connects>
 <connect gate="G$1" pin="+" pad="P$+"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="2" pad="P$-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1013,7 +1014,7 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <part name="IC2" library="Infinion" deviceset="IR25750LPBF" device=""/>
 <part name="IC3" library="Infinion" deviceset="IR25750LPBF" device=""/>
 <part name="IC4" library="DRV8320SRTVT" deviceset="DRV8320SRTVT" device=""/>
-<part name="C1" library="KEMET" deviceset="T494X107M025AT" device=""/>
+<part name="OS-CON1" library="OS-CON" deviceset="50SVPF68M" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1068,7 +1069,7 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <instance part="IC2" gate="G$1" x="50.8" y="-83.82"/>
 <instance part="IC3" gate="G$1" x="50.8" y="-33.02"/>
 <instance part="IC4" gate="G$1" x="-66.04" y="-73.66"/>
-<instance part="C1" gate="G$1" x="-142.24" y="-139.7"/>
+<instance part="OS-CON1" gate="G$1" x="-142.24" y="-139.7"/>
 </instances>
 <busses>
 </busses>
@@ -1088,7 +1089,6 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <wire x1="104.14" y1="93.98" x2="104.14" y2="-203.2" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="-203.2" x2="88.9" y2="-203.2" width="0.1524" layer="91"/>
 <junction x="88.9" y="-203.2"/>
-<wire x1="88.9" y1="-203.2" x2="88.9" y2="-200.66" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="-203.2" x2="177.8" y2="-203.2" width="0.1524" layer="91"/>
 <junction x="162.56" y="-203.2"/>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -1111,14 +1111,13 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <wire x1="236.22" y1="-205.74" x2="259.08" y2="-205.74" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="-205.74" x2="259.08" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="236.22" y="-205.74"/>
-<wire x1="88.9" y1="-200.66" x2="99.06" y2="-200.66" width="0.1524" layer="91"/>
-<junction x="88.9" y="-200.66"/>
 <pinref part="FD2" gate="G$1" pin="A"/>
-<wire x1="88.9" y1="-200.66" x2="88.9" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-203.2" x2="88.9" y2="-172.72" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-172.72" x2="88.9" y2="-172.72" width="0.1524" layer="91"/>
 <pinref part="FET2" gate="G$1" pin="S"/>
-<wire x1="91.44" y1="-154.94" x2="91.44" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-154.94" x2="91.44" y2="-162.56" width="0.1524" layer="91"/>
 <junction x="91.44" y="-154.94"/>
+<wire x1="91.44" y1="-162.56" x2="91.44" y2="-172.72" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-154.94" x2="96.52" y2="-154.94" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="-154.94" x2="96.52" y2="-149.86" width="0.1524" layer="91"/>
 <pinref part="FD4" gate="G$1" pin="A"/>
@@ -1154,17 +1153,25 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <wire x1="63.5" y1="-43.18" x2="66.04" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-43.18" x2="66.04" y2="-66.04" width="0.1524" layer="91"/>
 <junction x="66.04" y="-66.04"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="-162.56" x2="66.04" y2="-162.56" width="0.1524" layer="91"/>
+<junction x="91.44" y="-162.56"/>
+<pinref part="IC1" gate="G$1" pin="COM"/>
+<wire x1="66.04" y1="-162.56" x2="91.44" y2="-162.56" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-142.24" x2="66.04" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-142.24" x2="66.04" y2="-162.56" width="0.1524" layer="91"/>
+<junction x="66.04" y="-162.56"/>
 </segment>
 <segment>
 <pinref part="CN3" gate="G$1" pin="P$2"/>
 <wire x1="-152.4" y1="-142.24" x2="-147.32" y2="-142.24" width="0.1524" layer="91"/>
 <wire x1="-147.32" y1="-142.24" x2="-147.32" y2="-147.32" width="0.1524" layer="91"/>
 <label x="-147.32" y="-149.86" size="1.778" layer="95" rot="R90"/>
-<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="-147.32" y1="-147.32" x2="-147.32" y2="-149.86" width="0.1524" layer="91"/>
 <wire x1="-142.24" y1="-144.78" x2="-142.24" y2="-147.32" width="0.1524" layer="91"/>
 <wire x1="-142.24" y1="-147.32" x2="-147.32" y2="-147.32" width="0.1524" layer="91"/>
 <junction x="-147.32" y="-147.32"/>
+<pinref part="OS-CON1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1590,11 +1597,11 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <pinref part="CN3" gate="G$1" pin="P$1"/>
 <wire x1="-152.4" y1="-137.16" x2="-147.32" y2="-137.16" width="0.1524" layer="91"/>
 <wire x1="-147.32" y1="-137.16" x2="-147.32" y2="-132.08" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="-147.32" y1="-132.08" x2="-147.32" y2="-127" width="0.1524" layer="91"/>
 <wire x1="-142.24" y1="-137.16" x2="-142.24" y2="-132.08" width="0.1524" layer="91"/>
 <wire x1="-142.24" y1="-132.08" x2="-147.32" y2="-132.08" width="0.1524" layer="91"/>
 <junction x="-147.32" y="-132.08"/>
+<pinref part="OS-CON1" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -1615,15 +1622,14 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="FET2" gate="G$1" pin="G"/>
-<wire x1="27.94" y1="-149.86" x2="78.994" y2="-149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
+<wire x1="27.94" y1="-149.86" x2="35.56" y2="-149.86" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="GATE"/>
 <pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="-149.86" x2="78.994" y2="-149.86" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="-137.16" x2="35.56" y2="-137.16" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-137.16" x2="35.56" y2="-162.56" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-137.16" x2="35.56" y2="-149.86" width="0.1524" layer="91"/>
+<junction x="35.56" y="-149.86"/>
+<wire x1="35.56" y1="-149.86" x2="35.56" y2="-162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
