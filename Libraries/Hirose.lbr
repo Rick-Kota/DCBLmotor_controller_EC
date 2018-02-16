@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.1">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -53,7 +53,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -197,6 +197,42 @@
 <wire x1="-0.54" y1="-2.64" x2="-2.82" y2="-2.64" width="0.127" layer="21"/>
 <text x="-2.27" y="-4.68" size="1.016" layer="21">&gt;NAME</text>
 </package>
+<package name="DF60-3P-10.16DSA(27)">
+<pad name="P$1" x="-11.43" y="0" drill="1.4" shape="square"/>
+<pad name="P$2" x="-8.89" y="0" drill="1.4" shape="square"/>
+<pad name="P$3" x="-1.27" y="0" drill="1.4"/>
+<pad name="P$4" x="1.27" y="0" drill="1.4"/>
+<pad name="P$5" x="8.89" y="0" drill="1.4"/>
+<pad name="P$6" x="11.43" y="0" drill="1.4"/>
+<hole x="-14.935" y="5.8" drill="2.2"/>
+<hole x="14.935" y="5.8" drill="2.2"/>
+<wire x1="-16.26" y1="9.25" x2="-16.26" y2="-2.95" width="0.4064" layer="21"/>
+<wire x1="16.26" y1="9.25" x2="16.26" y2="-2.95" width="0.4064" layer="21"/>
+<wire x1="-16.25" y1="-2.95" x2="16.25" y2="-2.95" width="0.4064" layer="21"/>
+<wire x1="-16.2" y1="9.25" x2="16.25" y2="9.25" width="0.4064" layer="21"/>
+<wire x1="16.25" y1="9.25" x2="16.25" y2="9.1" width="0.4064" layer="21"/>
+</package>
+<package name="DF63-3P-3.96DSA">
+<pad name="P$1" x="3.96" y="0" drill="1.8" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="1.8"/>
+<pad name="P$3" x="-3.96" y="0" drill="1.8"/>
+<wire x1="-6.31" y1="4.15" x2="-6.31" y2="-3.85" width="0.2" layer="21"/>
+<wire x1="6.31" y1="-3.85" x2="6.31" y2="4.15" width="0.2" layer="21"/>
+<hole x="5.46" y="3.25" drill="1.6"/>
+<wire x1="6.3" y1="4.15" x2="-6.3" y2="4.15" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-3.85" x2="6.3" y2="-3.85" width="0.2" layer="21"/>
+<text x="-5.65" y="2.6" size="1.27" layer="21">&gt;NAME</text>
+</package>
+<package name="DF63-2P-3.96DSA">
+<pad name="P$1" x="1.98" y="0" drill="1.8" shape="square"/>
+<pad name="P$2" x="-1.98" y="0" drill="1.8"/>
+<wire x1="4.33" y1="-3.85" x2="4.33" y2="4.15" width="0.2" layer="21"/>
+<hole x="3.48" y="3.25" drill="1.6"/>
+<wire x1="4.32" y1="4.15" x2="-4.3" y2="4.15" width="0.2" layer="21"/>
+<wire x1="-4.3" y1="-3.85" x2="4.32" y2="-3.85" width="0.2" layer="21"/>
+<text x="-3.82" y="2.6" size="1.27" layer="21">&gt;NAME</text>
+<wire x1="-4.3" y1="4.1" x2="-4.3" y2="-3.8" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CON-1X4">
@@ -252,6 +288,27 @@
 <pin name="8" x="0" y="-15.24" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="9" x="0" y="-17.78" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="10" x="0" y="-20.32" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="CON-1X3">
+<wire x1="-3.81" y1="-5.08" x2="3.81" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="5.08" x2="-3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="5.08" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-3.81" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="0" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="3" x="0" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="CON-1X2">
+<wire x1="-3.81" y1="-5.08" x2="3.81" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="-3.81" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-3.81" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -364,6 +421,58 @@
 <connect gate="G$1" pin="2" pad="P$2"/>
 <connect gate="G$1" pin="3" pad="P$3"/>
 <connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DF60-3P-10.16DSA(26)" prefix="CN">
+<description>ヒロセ電機 基板ヘッダ, 3極, 1列, ストレート, 電線対基板 10.16mm DF60シリーズ</description>
+<gates>
+<gate name="G$1" symbol="CON-1X3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DF60-3P-10.16DSA(27)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1 P$2"/>
+<connect gate="G$1" pin="2" pad="P$3 P$4"/>
+<connect gate="G$1" pin="3" pad="P$5 P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DF63-3P-3.96DSA">
+<description>ヒロセ電機EnerBee DF63シリーズ3.96 mm基板ヘッダコネクタ</description>
+<gates>
+<gate name="G$1" symbol="CON-1X3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DF63-3P-3.96DSA">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DF63-2P-3.96DSA" prefix="CN">
+<gates>
+<gate name="G$1" symbol="CON-1X2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DF63-2P-3.96DSA">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="8.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;ARM Microcontrollers - MCU&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOP65P760X190-30N">
+<description>&lt;b&gt;SSOP30-P-300-0.65&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-3.562" y="4.55" dx="1.525" dy="0.45" layer="1"/>
+<smd name="2" x="-3.562" y="3.9" dx="1.525" dy="0.45" layer="1"/>
+<smd name="3" x="-3.562" y="3.25" dx="1.525" dy="0.45" layer="1"/>
+<smd name="4" x="-3.562" y="2.6" dx="1.525" dy="0.45" layer="1"/>
+<smd name="5" x="-3.562" y="1.95" dx="1.525" dy="0.45" layer="1"/>
+<smd name="6" x="-3.562" y="1.3" dx="1.525" dy="0.45" layer="1"/>
+<smd name="7" x="-3.562" y="0.65" dx="1.525" dy="0.45" layer="1"/>
+<smd name="8" x="-3.562" y="0" dx="1.525" dy="0.45" layer="1"/>
+<smd name="9" x="-3.562" y="-0.65" dx="1.525" dy="0.45" layer="1"/>
+<smd name="10" x="-3.562" y="-1.3" dx="1.525" dy="0.45" layer="1"/>
+<smd name="11" x="-3.562" y="-1.95" dx="1.525" dy="0.45" layer="1"/>
+<smd name="12" x="-3.562" y="-2.6" dx="1.525" dy="0.45" layer="1"/>
+<smd name="13" x="-3.562" y="-3.25" dx="1.525" dy="0.45" layer="1"/>
+<smd name="14" x="-3.562" y="-3.9" dx="1.525" dy="0.45" layer="1"/>
+<smd name="15" x="-3.562" y="-4.55" dx="1.525" dy="0.45" layer="1"/>
+<smd name="16" x="3.562" y="-4.55" dx="1.525" dy="0.45" layer="1"/>
+<smd name="17" x="3.562" y="-3.9" dx="1.525" dy="0.45" layer="1"/>
+<smd name="18" x="3.562" y="-3.25" dx="1.525" dy="0.45" layer="1"/>
+<smd name="19" x="3.562" y="-2.6" dx="1.525" dy="0.45" layer="1"/>
+<smd name="20" x="3.562" y="-1.95" dx="1.525" dy="0.45" layer="1"/>
+<smd name="21" x="3.562" y="-1.3" dx="1.525" dy="0.45" layer="1"/>
+<smd name="22" x="3.562" y="-0.65" dx="1.525" dy="0.45" layer="1"/>
+<smd name="23" x="3.562" y="0" dx="1.525" dy="0.45" layer="1"/>
+<smd name="24" x="3.562" y="0.65" dx="1.525" dy="0.45" layer="1"/>
+<smd name="25" x="3.562" y="1.3" dx="1.525" dy="0.45" layer="1"/>
+<smd name="26" x="3.562" y="1.95" dx="1.525" dy="0.45" layer="1"/>
+<smd name="27" x="3.562" y="2.6" dx="1.525" dy="0.45" layer="1"/>
+<smd name="28" x="3.562" y="3.25" dx="1.525" dy="0.45" layer="1"/>
+<smd name="29" x="3.562" y="3.9" dx="1.525" dy="0.45" layer="1"/>
+<smd name="30" x="3.562" y="4.55" dx="1.525" dy="0.45" layer="1"/>
+<text x="-2.159" y="-2.667" size="0.8128" layer="25" rot="R90" align="center">&gt;NAME</text>
+<text x="4.699" y="-0.381" size="0.6096" layer="51" rot="R90" align="center">&gt;VALUE</text>
+<wire x1="-2.8" y1="4.85" x2="2.8" y2="4.85" width="0.1" layer="51"/>
+<wire x1="2.8" y1="4.85" x2="2.8" y2="-4.85" width="0.1" layer="51"/>
+<wire x1="2.8" y1="-4.85" x2="-2.8" y2="-4.85" width="0.1" layer="51"/>
+<wire x1="-2.8" y1="-4.85" x2="-2.8" y2="4.85" width="0.1" layer="51"/>
+<wire x1="-2.8" y1="4.2" x2="-2.15" y2="4.85" width="0.1" layer="51"/>
+<wire x1="-4.325" y1="5.125" x2="-2.8" y2="5.125" width="0.2" layer="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TMPM375FSDMG">
+<wire x1="5.08" y1="2.54" x2="81.28" y2="2.54" width="0.254" layer="94"/>
+<wire x1="81.28" y1="2.54" x2="81.28" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="81.28" y1="-38.1" x2="5.08" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-38.1" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<text x="43.18" y="5.08" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="43.18" y="-40.64" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<pin name="AVSSB/VREFLB/AMPVSS" x="0" y="0" length="middle" direction="pwr"/>
+<pin name="AIB9/PJ6" x="0" y="-2.54" length="middle" direction="pas"/>
+<pin name="AINB10/PJ7" x="0" y="-5.08" length="middle" direction="pas"/>
+<pin name="AINB11/PK0" x="0" y="-7.62" length="middle" direction="pas"/>
+<pin name="AINB12/PK1" x="0" y="-10.16" length="middle" direction="pas"/>
+<pin name="AVDD5B/VREFHB/AMPVDD5" x="0" y="-12.7" length="middle" direction="pas"/>
+<pin name="MODE" x="0" y="-15.24" length="middle" direction="pas"/>
+<pin name="U0/PG0" x="0" y="-17.78" length="middle" direction="pas"/>
+<pin name="X0/PG1" x="0" y="-20.32" length="middle" direction="pas"/>
+<pin name="V0/PG2" x="0" y="-22.86" length="middle" direction="pas"/>
+<pin name="Y0/PG3" x="0" y="-25.4" length="middle" direction="pas"/>
+<pin name="W0/PG4" x="0" y="-27.94" length="middle" direction="pas"/>
+<pin name="Z0/PG5" x="0" y="-30.48" length="middle" direction="pas"/>
+<pin name="ENG/OVV/PG6" x="0" y="-33.02" length="middle" direction="pas"/>
+<pin name="RESET" x="0" y="-35.56" length="middle" direction="pas"/>
+<pin name="PE0/ENCA/TXD0" x="86.36" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="PE1/ENCB/RXD0/TB4IN" x="86.36" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="DVDD5B" x="86.36" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="PM1/X2" x="86.36" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="DVSSB" x="86.36" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="PM0/X1" x="86.36" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="VOUT15" x="86.36" y="-15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="VINREG5" x="86.36" y="-17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="VOUT3" x="86.36" y="-20.32" length="middle" direction="pas" rot="R180"/>
+<pin name="PE2/ENCZ/SCLK0/CTS0/INT7/(SCL0)" x="86.36" y="-22.86" length="middle" direction="pas" rot="R180"/>
+<pin name="PF0/TB7IN/BOOT/SDA0/S00/TXD1/INTC" x="86.36" y="-25.4" length="middle" direction="pas" rot="R180"/>
+<pin name="PB6/TB7OUT/TDI/SCL0/SI0/RXD1/INT6" x="86.36" y="-27.94" length="middle" direction="pas" rot="R180"/>
+<pin name="PB5/TD0/SWV/SCK0/(SDA0)" x="86.36" y="-30.48" length="middle" direction="pas" rot="R180"/>
+<pin name="PB4/TCK/SWCLK/(TXD1)" x="86.36" y="-33.02" length="middle" direction="pas" rot="R180"/>
+<pin name="PB3/TMS/SWD10/(RXD1)" x="86.36" y="-35.56" length="middle" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TMPM375FSDMG" prefix="IC">
+<description>&lt;b&gt;ARM Microcontrollers - MCU&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwi84PazlYjZAhVMjJQKHa_VAE0QFgg0MAI&amp;url=https://toshiba.semicon-storage.com/info/docget.jsp?did=14433&amp;prodName=TMPM375FSDMG&amp;usg=AOvVaw2FjSpbRPn9r22"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TMPM375FSDMG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP65P760X190-30N">
+<connects>
+<connect gate="G$1" pin="AIB9/PJ6" pad="2"/>
+<connect gate="G$1" pin="AINB10/PJ7" pad="3"/>
+<connect gate="G$1" pin="AINB11/PK0" pad="4"/>
+<connect gate="G$1" pin="AINB12/PK1" pad="5"/>
+<connect gate="G$1" pin="AVDD5B/VREFHB/AMPVDD5" pad="6"/>
+<connect gate="G$1" pin="AVSSB/VREFLB/AMPVSS" pad="1"/>
+<connect gate="G$1" pin="DVDD5B" pad="28"/>
+<connect gate="G$1" pin="DVSSB" pad="26"/>
+<connect gate="G$1" pin="ENG/OVV/PG6" pad="14"/>
+<connect gate="G$1" pin="MODE" pad="7"/>
+<connect gate="G$1" pin="PB3/TMS/SWD10/(RXD1)" pad="16"/>
+<connect gate="G$1" pin="PB4/TCK/SWCLK/(TXD1)" pad="17"/>
+<connect gate="G$1" pin="PB5/TD0/SWV/SCK0/(SDA0)" pad="18"/>
+<connect gate="G$1" pin="PB6/TB7OUT/TDI/SCL0/SI0/RXD1/INT6" pad="19"/>
+<connect gate="G$1" pin="PE0/ENCA/TXD0" pad="30"/>
+<connect gate="G$1" pin="PE1/ENCB/RXD0/TB4IN" pad="29"/>
+<connect gate="G$1" pin="PE2/ENCZ/SCLK0/CTS0/INT7/(SCL0)" pad="21"/>
+<connect gate="G$1" pin="PF0/TB7IN/BOOT/SDA0/S00/TXD1/INTC" pad="20"/>
+<connect gate="G$1" pin="PM0/X1" pad="25"/>
+<connect gate="G$1" pin="PM1/X2" pad="27"/>
+<connect gate="G$1" pin="RESET" pad="15"/>
+<connect gate="G$1" pin="U0/PG0" pad="8"/>
+<connect gate="G$1" pin="V0/PG2" pad="10"/>
+<connect gate="G$1" pin="VINREG5" pad="23"/>
+<connect gate="G$1" pin="VOUT15" pad="24"/>
+<connect gate="G$1" pin="VOUT3" pad="22"/>
+<connect gate="G$1" pin="W0/PG4" pad="12"/>
+<connect gate="G$1" pin="X0/PG1" pad="9"/>
+<connect gate="G$1" pin="Y0/PG3" pad="11"/>
+<connect gate="G$1" pin="Z0/PG5" pad="13"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="3D_PACKAGE" value="" constant="no"/>
+<attribute name="ALLIED_NUMBER" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="ARM Microcontrollers - MCU" constant="no"/>
+<attribute name="HEIGHT" value="1.9mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Toshiba" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="TMPM375FSDMG" constant="no"/>
+<attribute name="OTHER_PART_NUMBER" value="" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="" constant="no"/>
+<attribute name="SUPPLIER_NAME" value="RS" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
