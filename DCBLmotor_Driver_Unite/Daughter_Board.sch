@@ -234,21 +234,6 @@ SMDリード付き</description>
 <wire x1="3.2" y1="-2.6" x2="-3.2" y2="-2.6" width="0.2" layer="21"/>
 <text x="-3.1" y="-3.4" size="0.6096" layer="21">&gt;NAME</text>
 </package>
-<package name="SOT-23-L5">
-<smd name="P$5" x="-0.95" y="1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<smd name="P$4" x="0.95" y="1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<smd name="P$1" x="-0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<smd name="P$3" x="0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<wire x1="-1.45" y1="0.8" x2="1.45" y2="0.8" width="0.127" layer="21"/>
-<wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-1.45" y1="0.8" x2="-1.45" y2="0.25" width="0.127" layer="21"/>
-<wire x1="-1.45" y1="-0.25" x2="-1.45" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.127" layer="21"/>
-<text x="2" y="-1.3" size="0.4064" layer="21" rot="R90">&gt;NAME</text>
-<wire x1="-1.45" y1="0.25" x2="-1.45" y2="-0.25" width="0.127" layer="21" curve="-180"/>
-<circle x="-0.95" y="-0.45" radius="0.05" width="0.127" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="FET2">
@@ -295,19 +280,6 @@ SMDリード付き</description>
 <wire x1="2.921" y1="-0.254" x2="2.159" y2="0" width="0.254" layer="94"/>
 <wire x1="2.159" y1="0" x2="2.921" y2="0" width="0.254" layer="94"/>
 </symbol>
-<symbol name="IR25750LPBF">
-<pin name="CS" x="-10.16" y="5.08" visible="pin" length="middle"/>
-<pin name="N.C." x="-10.16" y="0" visible="pin" length="middle"/>
-<pin name="GATE" x="-10.16" y="-5.08" visible="pin" length="middle"/>
-<pin name="VS" x="12.7" y="10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="COM" x="12.7" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
-<text x="-5.08" y="-15.24" size="1.27" layer="94">&gt;NAME</text>
-<text x="-5.08" y="-17.78" size="1.27" layer="94">&gt;VALUE</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="IRF7480MTRPBF" prefix="FET">
@@ -321,26 +293,6 @@ SMDリード付き</description>
 <connect gate="G$1" pin="D" pad="P$1 P$2 P$3 P$4"/>
 <connect gate="G$1" pin="G" pad="G1 G2"/>
 <connect gate="G$1" pin="S" pad="S1 S2 S3 S4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="IR25750LPBF" prefix="IC">
-<description>Current Sensing - MOSFET, IGBT PMIC SOT-23-5</description>
-<gates>
-<gate name="G$1" symbol="IR25750LPBF" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-L5">
-<connects>
-<connect gate="G$1" pin="COM" pad="P$4"/>
-<connect gate="G$1" pin="CS" pad="P$1"/>
-<connect gate="G$1" pin="GATE" pad="P$3"/>
-<connect gate="G$1" pin="N.C." pad="P$2"/>
-<connect gate="G$1" pin="VS" pad="P$5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1453,6 +1405,68 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 </deviceset>
 </devicesets>
 </library>
+<library name="ACS780">
+<packages>
+<package name="7-PIN_PSOP">
+<smd name="P$6" x="-1.5" y="2.35" dx="1.8" dy="1.7" layer="1"/>
+<smd name="P$5" x="1.5" y="2.35" dx="1.8" dy="1.7" layer="1"/>
+<smd name="P$7" x="-2.8" y="0" dx="0.6" dy="0.9" layer="1" rot="R90"/>
+<smd name="P$4" x="2.8" y="0" dx="0.6" dy="0.9" layer="1" rot="R90"/>
+<smd name="P$1" x="-1.6" y="-2.5" dx="0.5" dy="1.6" layer="1"/>
+<smd name="P$3" x="1.6" y="-2.5" dx="0.5" dy="1.6" layer="1"/>
+<smd name="P$2" x="0" y="-2.5" dx="0.5" dy="1.6" layer="1"/>
+<wire x1="-3.2" y1="2.4" x2="3.2" y2="2.4" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="-2.4" x2="3.2" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="-1" x2="-2.7" y2="-1" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="1" x2="-2.7" y2="1" width="0.127" layer="21"/>
+<wire x1="2.7" y1="1" x2="3.2" y2="1" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-1" x2="3.2" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="1" x2="-2.7" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.7" y1="1" x2="2.7" y2="-1" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="2.4" x2="-3.2" y2="1" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="-2.4" x2="-3.2" y2="-1" width="0.127" layer="21"/>
+<wire x1="3.2" y1="-2.4" x2="3.2" y2="-1" width="0.127" layer="21"/>
+<wire x1="3.2" y1="2.4" x2="3.2" y2="1" width="0.127" layer="21"/>
+<text x="2.5" y="-3.6" size="0.8128" layer="21">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ACS780KLRTR">
+<pin name="IP+" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="IP-" x="-12.7" y="-2.54" visible="pin" length="middle"/>
+<pin name="GND" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="VOUT" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="8.89" size="1.778" layer="94">&gt;VALUE</text>
+<text x="3.556" y="-9.271" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ACS780KLRTR-150B-T" prefix="IC">
+<gates>
+<gate name="G$1" symbol="ACS780KLRTR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7-PIN_PSOP">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="IP+" pad="P$5"/>
+<connect gate="G$1" pin="IP-" pad="P$6"/>
+<connect gate="G$1" pin="VCC" pad="P$1"/>
+<connect gate="G$1" pin="VOUT" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1490,9 +1504,6 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <part name="R6" library="ROHM" deviceset="ESR03EZPJ102" device=""/>
 <part name="VCC" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="VCC1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="IC1" library="Infinion" deviceset="IR25750LPBF" device=""/>
-<part name="IC2" library="Infinion" deviceset="IR25750LPBF" device=""/>
-<part name="IC3" library="Infinion" deviceset="IR25750LPBF" device=""/>
 <part name="IC4" library="DRV8320SRTVT" deviceset="DRV8320SRTVT" device=""/>
 <part name="OS-CON1" library="OS-CON" deviceset="63SXE33M" device=""/>
 <part name="C1" library="TDK" deviceset="CKG32KX7R1H105M335AJ" device=""/>
@@ -1508,6 +1519,7 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <part name="L1" library="TDK" deviceset="SLF10145T-470M1R4-PF" device=""/>
 <part name="R7" library="Panasonic" deviceset="ERA-6AEB9312V" device=""/>
 <part name="R8" library="Panasonic" deviceset="ERA-6AEB5762V" device=""/>
+<part name="IC1" library="ACS780" deviceset="ACS780KLRTR-150B-T" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1529,7 +1541,7 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <instance part="C4" gate="G$1" x="104.14" y="99.06"/>
 <instance part="C5" gate="G$1" x="144.78" y="53.34"/>
 <instance part="C6" gate="G$1" x="254" y="7.62"/>
-<instance part="SUPPLY7" gate="GND" x="132.08" y="-213.36"/>
+<instance part="SUPPLY7" gate="GND" x="132.08" y="-220.98"/>
 <instance part="PMC1" gate="G$1" x="109.22" y="88.9"/>
 <instance part="PMC2" gate="G$1" x="149.86" y="43.18"/>
 <instance part="PMC3" gate="G$1" x="259.08" y="-2.54"/>
@@ -1541,9 +1553,6 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <instance part="R6" gate="G$1" x="22.86" y="-149.86"/>
 <instance part="VCC" gate="VCC" x="182.88" y="162.56"/>
 <instance part="VCC1" gate="VCC" x="-147.32" y="-124.46"/>
-<instance part="IC1" gate="G$1" x="50.8" y="-132.08"/>
-<instance part="IC2" gate="G$1" x="50.8" y="-83.82"/>
-<instance part="IC3" gate="G$1" x="50.8" y="-33.02"/>
 <instance part="IC4" gate="G$1" x="-66.04" y="-73.66"/>
 <instance part="OS-CON1" gate="G$1" x="-142.24" y="-139.7"/>
 <instance part="C1" gate="G$1" x="-88.9" y="-83.82" rot="R90"/>
@@ -1560,81 +1569,18 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <instance part="L1" gate="G$1" x="-165.1" y="30.48"/>
 <instance part="R7" gate="G$1" x="-170.18" y="-20.32" rot="R90"/>
 <instance part="R8" gate="G$1" x="-165.1" y="12.7" rot="R90"/>
+<instance part="IC1" gate="G$1" x="299.72" y="-182.88"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="177.8" y1="-200.66" x2="236.22" y2="-205.74" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="-205.74" x2="236.22" y2="-208.28" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="-208.28" x2="104.14" y2="-208.28" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="-208.28" x2="109.22" y2="-208.28" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="-208.28" x2="132.08" y2="-208.28" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="-208.28" x2="144.78" y2="-208.28" width="0.1524" layer="91"/>
-<junction x="132.08" y="-208.28"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="-208.28" x2="149.86" y2="-208.28" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="-208.28" x2="236.22" y2="-208.28" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="93.98" x2="104.14" y2="-208.28" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="-200.66" x2="254" y2="-203.2" width="0.1524" layer="91"/>
-<wire x1="254" y1="-203.2" x2="254" y2="2.54" width="0.1524" layer="91"/>
-<junction x="177.8" y="-200.66"/>
+<pinref part="IC1" gate="G$1" pin="IP-"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<wire x1="132.08" y1="-210.82" x2="132.08" y2="-208.28" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="48.26" x2="144.78" y2="-208.28" width="0.1524" layer="91"/>
-<pinref part="PMC1" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="83.82" x2="109.22" y2="-208.28" width="0.1524" layer="91"/>
-<pinref part="PMC2" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="-208.28" x2="149.86" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="PMC3" gate="G$1" pin="2"/>
-<wire x1="236.22" y1="-205.74" x2="259.08" y2="-205.74" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="-205.74" x2="259.08" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="236.22" y="-205.74"/>
-<pinref part="FD2" gate="G$1" pin="A"/>
-<wire x1="91.44" y1="-208.28" x2="91.44" y2="-162.56" width="0.1524" layer="91"/>
-<pinref part="FET2" gate="G$1" pin="S"/>
-<junction x="91.44" y="-154.94"/>
-<wire x1="91.44" y1="-160.02" x2="91.44" y2="-162.56" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="-154.94" x2="96.52" y2="-154.94" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="-154.94" x2="96.52" y2="-149.86" width="0.1524" layer="91"/>
-<pinref part="FD4" gate="G$1" pin="A"/>
-<wire x1="137.16" y1="-106.68" x2="137.16" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="FET4" gate="G$1" pin="S"/>
-<wire x1="132.08" y1="-106.68" x2="137.16" y2="-106.68" width="0.1524" layer="91"/>
-<junction x="132.08" y="-106.68"/>
-<wire x1="132.08" y1="-106.68" x2="132.08" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="-114.3" x2="132.08" y2="-208.28" width="0.1524" layer="91"/>
-<junction x="132.08" y="-114.3"/>
-<pinref part="IC2" gate="G$1" pin="COM"/>
-<wire x1="66.04" y1="-114.3" x2="132.08" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="-93.98" x2="66.04" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="-93.98" x2="66.04" y2="-114.3" width="0.1524" layer="91"/>
-<pinref part="FET6" gate="G$1" pin="S"/>
-<pinref part="FD6" gate="G$1" pin="A"/>
-<wire x1="182.88" y1="-50.8" x2="182.88" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="-55.88" x2="177.8" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="177.8" y="-55.88"/>
-<wire x1="177.8" y1="-66.04" x2="177.8" y2="-200.66" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="-66.04" x2="177.8" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="-66.04" x2="177.8" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="COM"/>
-<wire x1="63.5" y1="-43.18" x2="66.04" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="-43.18" x2="66.04" y2="-66.04" width="0.1524" layer="91"/>
-<junction x="91.44" y="-162.56"/>
-<pinref part="IC1" gate="G$1" pin="COM"/>
-<wire x1="66.04" y1="-162.56" x2="91.44" y2="-162.56" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="-142.24" x2="66.04" y2="-142.24" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="-142.24" x2="66.04" y2="-162.56" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="-154.94" x2="91.44" y2="-160.02" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="-160.02" x2="83.82" y2="-160.02" width="0.1524" layer="91"/>
-<junction x="109.22" y="-208.28"/>
-<junction x="104.14" y="-208.28"/>
-<junction x="149.86" y="-208.28"/>
-<junction x="144.78" y="-208.28"/>
-<junction x="177.8" y="-66.04"/>
+<wire x1="132.08" y1="-218.44" x2="132.08" y2="-215.9" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-215.9" x2="287.02" y2="-215.9" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="-215.9" x2="287.02" y2="-185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-154.94" y1="-142.24" x2="-147.32" y2="-142.24" width="0.1524" layer="91"/>
@@ -1652,21 +1598,6 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <wire x1="-147.32" y1="-139.7" x2="-147.32" y2="-142.24" width="0.1524" layer="91"/>
 <junction x="-147.32" y="-142.24"/>
 <pinref part="CN2" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="G$1" pin="SLA"/>
-<wire x1="-66.04" y1="-91.44" x2="-78.74" y2="-91.44" width="0.1524" layer="91"/>
-<label x="-78.74" y="-91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="G$1" pin="SLB"/>
-<wire x1="-58.42" y1="-106.68" x2="-58.42" y2="-116.84" width="0.1524" layer="91"/>
-<label x="-58.42" y="-116.84" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="G$1" pin="SLC"/>
-<wire x1="-40.64" y1="-106.68" x2="-40.64" y2="-116.84" width="0.1524" layer="91"/>
-<label x="-40.64" y="-116.84" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="THERMAL_PAD"/>
@@ -1856,22 +1787,12 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 </net>
 <net name="CU3" class="0">
 <segment>
-<pinref part="IC3" gate="G$1" pin="CS"/>
-<wire x1="40.64" y1="-27.94" x2="33.02" y2="-27.94" width="0.1524" layer="91"/>
-<label x="33.02" y="-27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="-91.44" y1="30.48" x2="-104.14" y2="30.48" width="0.1524" layer="91"/>
 <label x="-104.14" y="30.48" size="1.778" layer="95"/>
 <pinref part="CN1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="CU2" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="CS"/>
-<wire x1="40.64" y1="-78.74" x2="33.02" y2="-78.74" width="0.1524" layer="91"/>
-<label x="33.02" y="-78.74" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="-68.58" y1="33.02" x2="-53.34" y2="33.02" width="0.1524" layer="91"/>
 <label x="-55.88" y="33.02" size="1.778" layer="95"/>
@@ -1892,17 +1813,13 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <junction x="91.44" y="-139.7"/>
 <wire x1="91.44" y1="99.06" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="63.5" x2="91.44" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="-10.16" x2="91.44" y2="-121.92" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="-121.92" x2="91.44" y2="-139.7" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-10.16" x2="91.44" y2="-139.7" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-10.16" x2="266.7" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="91.44" y="-10.16"/>
 <wire x1="91.44" y1="63.5" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
 <junction x="91.44" y="63.5"/>
 <label x="76.2" y="63.5" size="1.778" layer="95"/>
 <wire x1="266.7" y1="-10.16" x2="287.02" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VS"/>
-<wire x1="63.5" y1="-121.92" x2="91.44" y2="-121.92" width="0.1524" layer="91"/>
-<junction x="91.44" y="-121.92"/>
 <pinref part="CN4" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="-15.24" x2="287.02" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
@@ -1927,16 +1844,12 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <junction x="132.08" y="-91.44"/>
 <wire x1="132.08" y1="50.8" x2="132.08" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="20.32" x2="132.08" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="-15.24" x2="132.08" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="-73.66" x2="132.08" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-15.24" x2="132.08" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="-15.24" x2="266.7" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="132.08" y="-15.24"/>
 <wire x1="132.08" y1="20.32" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
 <junction x="132.08" y="20.32"/>
 <label x="127" y="20.32" size="1.778" layer="95"/>
-<pinref part="IC2" gate="G$1" pin="VS"/>
-<wire x1="63.5" y1="-73.66" x2="132.08" y2="-73.66" width="0.1524" layer="91"/>
-<junction x="132.08" y="-73.66"/>
 <pinref part="CN4" gate="G$1" pin="2"/>
 <wire x1="299.72" y1="-17.78" x2="266.7" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="-17.78" x2="266.7" y2="-15.24" width="0.1524" layer="91"/>
@@ -1964,7 +1877,6 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <wire x1="177.8" y1="-22.86" x2="299.72" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="177.8" y="-22.86"/>
 <label x="205.74" y="-22.86" size="1.778" layer="95"/>
-<pinref part="IC3" gate="G$1" pin="VS"/>
 <wire x1="63.5" y1="-22.86" x2="177.8" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="177.8" y="-22.86"/>
 <pinref part="CN4" gate="G$1" pin="3"/>
@@ -2049,14 +1961,9 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="IC3" gate="G$1" pin="GATE"/>
-<wire x1="40.64" y1="-38.1" x2="35.56" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="-50.8" x2="35.56" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-50.8" x2="35.56" y2="-50.8" width="0.1524" layer="91"/>
-<junction x="35.56" y="-50.8"/>
 <pinref part="FET6" gate="G$1" pin="G"/>
-<wire x1="35.56" y1="-50.8" x2="165.354" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-50.8" x2="165.354" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -2161,14 +2068,13 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 </net>
 <net name="CU1" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="CS"/>
-<wire x1="40.64" y1="-127" x2="30.48" y2="-127" width="0.1524" layer="91"/>
-<label x="33.02" y="-127" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="-91.44" y1="33.02" x2="-104.14" y2="33.02" width="0.1524" layer="91"/>
 <label x="-104.14" y="33.02" size="1.778" layer="95"/>
 <pinref part="CN1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="VOUT"/>
+<wire x1="312.42" y1="-177.8" x2="325.12" y2="-177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -2267,13 +2173,8 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="GATE"/>
-<wire x1="40.64" y1="-88.9" x2="35.56" y2="-88.9" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-88.9" x2="35.56" y2="-101.6" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="-101.6" x2="35.56" y2="-101.6" width="0.1524" layer="91"/>
-<junction x="35.56" y="-101.6"/>
-<wire x1="35.56" y1="-101.6" x2="119.634" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-101.6" x2="119.634" y2="-101.6" width="0.1524" layer="91"/>
 <pinref part="FET4" gate="G$1" pin="G"/>
 </segment>
 </net>
@@ -2281,12 +2182,7 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="FET2" gate="G$1" pin="G"/>
-<wire x1="27.94" y1="-149.86" x2="35.56" y2="-149.86" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="GATE"/>
-<wire x1="35.56" y1="-149.86" x2="78.994" y2="-149.86" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="-137.16" x2="35.56" y2="-137.16" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-137.16" x2="35.56" y2="-149.86" width="0.1524" layer="91"/>
-<junction x="35.56" y="-149.86"/>
+<wire x1="27.94" y1="-149.86" x2="78.994" y2="-149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -2472,6 +2368,84 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="-180.34" y1="40.64" x2="-165.1" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-165.1" y1="40.64" x2="-165.1" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LOSIDE" class="0">
+<segment>
+<wire x1="177.8" y1="-200.66" x2="236.22" y2="-205.74" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="-205.74" x2="236.22" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-208.28" x2="104.14" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-208.28" x2="109.22" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-208.28" x2="132.08" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-208.28" x2="144.78" y2="-208.28" width="0.1524" layer="91"/>
+<junction x="132.08" y="-208.28"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="-208.28" x2="149.86" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-208.28" x2="236.22" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="93.98" x2="104.14" y2="-208.28" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="-200.66" x2="254" y2="-203.2" width="0.1524" layer="91"/>
+<wire x1="254" y1="-203.2" x2="254" y2="2.54" width="0.1524" layer="91"/>
+<junction x="177.8" y="-200.66"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="-210.82" x2="132.08" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="48.26" x2="144.78" y2="-208.28" width="0.1524" layer="91"/>
+<pinref part="PMC1" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="83.82" x2="109.22" y2="-208.28" width="0.1524" layer="91"/>
+<pinref part="PMC2" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="-208.28" x2="149.86" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="PMC3" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="-205.74" x2="259.08" y2="-205.74" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="-205.74" x2="259.08" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="236.22" y="-205.74"/>
+<pinref part="FD2" gate="G$1" pin="A"/>
+<wire x1="91.44" y1="-208.28" x2="91.44" y2="-160.02" width="0.1524" layer="91"/>
+<pinref part="FET2" gate="G$1" pin="S"/>
+<junction x="91.44" y="-154.94"/>
+<wire x1="91.44" y1="-154.94" x2="96.52" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-154.94" x2="96.52" y2="-149.86" width="0.1524" layer="91"/>
+<pinref part="FD4" gate="G$1" pin="A"/>
+<wire x1="137.16" y1="-106.68" x2="137.16" y2="-101.6" width="0.1524" layer="91"/>
+<pinref part="FET4" gate="G$1" pin="S"/>
+<wire x1="132.08" y1="-106.68" x2="137.16" y2="-106.68" width="0.1524" layer="91"/>
+<junction x="132.08" y="-106.68"/>
+<wire x1="132.08" y1="-106.68" x2="132.08" y2="-109.22" width="0.1524" layer="91"/>
+<pinref part="FET6" gate="G$1" pin="S"/>
+<pinref part="FD6" gate="G$1" pin="A"/>
+<wire x1="132.08" y1="-109.22" x2="132.08" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="-50.8" x2="182.88" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="-55.88" x2="177.8" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="177.8" y="-55.88"/>
+<wire x1="177.8" y1="-55.88" x2="177.8" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="-60.96" x2="177.8" y2="-200.66" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-154.94" x2="91.44" y2="-160.02" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-160.02" x2="83.82" y2="-160.02" width="0.1524" layer="91"/>
+<junction x="109.22" y="-208.28"/>
+<junction x="104.14" y="-208.28"/>
+<junction x="149.86" y="-208.28"/>
+<junction x="144.78" y="-208.28"/>
+<pinref part="IC1" gate="G$1" pin="IP+"/>
+<wire x1="287.02" y1="-180.34" x2="281.94" y2="-180.34" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="-180.34" x2="281.94" y2="-210.82" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="-210.82" x2="132.08" y2="-210.82" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-109.22" x2="121.92" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="-60.96" x2="165.1" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="177.8" y="-60.96"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="SLC"/>
+<wire x1="-40.64" y1="-106.68" x2="-40.64" y2="-116.84" width="0.1524" layer="91"/>
+<label x="-40.64" y="-116.84" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="SLB"/>
+<wire x1="-58.42" y1="-106.68" x2="-58.42" y2="-116.84" width="0.1524" layer="91"/>
+<label x="-58.42" y="-116.84" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="SLA"/>
+<wire x1="-66.04" y1="-91.44" x2="-78.74" y2="-91.44" width="0.1524" layer="91"/>
+<label x="-78.74" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
