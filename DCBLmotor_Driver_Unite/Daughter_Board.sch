@@ -1773,6 +1773,20 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="-165.1" y1="7.62" x2="-152.4" y2="7.62" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="-68.58" x2="-27.94" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="G$1" pin="AGND"/>
+<wire x1="-27.94" y1="-76.2" x2="-30.48" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-76.2" x2="-17.78" y2="-76.2" width="0.1524" layer="91"/>
+<junction x="-27.94" y="-76.2"/>
+<label x="-20.32" y="-76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="PGND"/>
+<wire x1="-53.34" y1="-48.26" x2="-53.34" y2="-40.64" width="0.1524" layer="91"/>
+<label x="-53.34" y="-43.18" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="+3.3V" class="0">
 <segment>
@@ -2191,19 +2205,6 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <pinref part="IC4" gate="G$1" pin="VCP"/>
 <wire x1="-83.82" y1="-83.82" x2="-83.82" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="-76.2" x2="-66.04" y2="-76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="AGND" class="0">
-<segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="-68.58" x2="-27.94" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="IC4" gate="G$1" pin="AGND"/>
-<wire x1="-27.94" y1="-76.2" x2="-30.48" y2="-76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="G$1" pin="PGND"/>
-<wire x1="-53.34" y1="-48.26" x2="-53.34" y2="-40.64" width="0.1524" layer="91"/>
-<label x="-53.34" y="-43.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$7" class="0">

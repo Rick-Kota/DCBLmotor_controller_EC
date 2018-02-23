@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.1">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -89,6 +89,20 @@
 <text x="2.4" y="-3.2" size="0.6096" layer="21" rot="R90">&gt;NAME</text>
 <text x="3.2" y="-3.2" size="0.6096" layer="21" rot="R90">&gt;VALUE</text>
 </package>
+<package name="CVS-01B">
+<smd name="CASE3" x="-0.95" y="-2.15" dx="0.7" dy="0.7" layer="1"/>
+<smd name="CASE1" x="-0.95" y="2.15" dx="0.7" dy="0.7" layer="1"/>
+<smd name="CASE2" x="0.95" y="2.15" dx="0.7" dy="0.7" layer="1"/>
+<smd name="CASE4" x="0.95" y="-2.15" dx="0.7" dy="0.7" layer="1"/>
+<smd name="P$2-2" x="0" y="2.95" dx="1.2" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$2-1" x="0" y="-2.95" dx="1.2" dy="0.5" layer="1" rot="R90"/>
+<wire x1="-1.1" y1="2.8" x2="1.1" y2="2.8" width="0.127" layer="21"/>
+<wire x1="1.1" y1="2.8" x2="1.1" y2="-2.8" width="0.127" layer="21"/>
+<wire x1="1.1" y1="-2.8" x2="-1.1" y2="-2.8" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="-2.8" x2="-1.1" y2="2.8" width="0.127" layer="21"/>
+<text x="1.9" y="-3.2" size="0.6096" layer="21" rot="R90">&gt;NAME</text>
+<text x="2.7" y="-3.2" size="0.6096" layer="21" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="S">
@@ -115,6 +129,23 @@
 <connect gate="G$1" pin="S" pad="P$1-2"/>
 <connect gate="G$2" pin="P" pad="P$2-1"/>
 <connect gate="G$2" pin="S" pad="P$2-2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CVS-01TB" prefix="SW">
+<description>Dip Switch SPST 1 Position Surface Mount Slide (Standard) Actuator 100mA 6VDC</description>
+<gates>
+<gate name="G$1" symbol="S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CVS-01B">
+<connects>
+<connect gate="G$1" pin="P" pad="P$2-1"/>
+<connect gate="G$1" pin="S" pad="P$2-2"/>
 </connects>
 <technologies>
 <technology name=""/>
