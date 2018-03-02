@@ -121,6 +121,17 @@
 <wire x1="-4" y1="4" x2="-5" y2="4" width="0.127" layer="21"/>
 <text x="-1" y="-4" size="0.6096" layer="21">&gt;NAME</text>
 </package>
+<package name="YFF15PC">
+<smd name="P$1" x="-0.5" y="0" dx="0.3" dy="0.6" layer="1"/>
+<smd name="P$2" x="0.5" y="0" dx="0.3" dy="0.6" layer="1"/>
+<smd name="P$3" x="0" y="0.25" dx="0.19" dy="0.25" layer="1"/>
+<smd name="P$4" x="0" y="-0.25" dx="0.19" dy="0.25" layer="1"/>
+<text x="1.15" y="-0.55" size="0.254" layer="21" rot="R90">&gt;NAME</text>
+<wire x1="-0.75" y1="0.5" x2="0.75" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.75" y1="0.5" x2="0.75" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.75" y1="-0.5" x2="-0.75" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="-0.5" x2="-0.75" y2="0.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C">
@@ -141,6 +152,16 @@
 <wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="-180"/>
 <wire x1="10.16" y1="0" x2="12.7" y2="0" width="0.254" layer="94" curve="-180"/>
 <wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.254" layer="94" curve="-180"/>
+</symbol>
+<symbol name="DC">
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="GND" x="0" y="-3.12" visible="off" length="short" rot="R90"/>
+<text x="0.744" y="-5.969" size="1.778" layer="95">&gt;NAME</text>
+<text x="0.744" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.54" y1="0.508" x2="2.54" y2="1.016" layer="94"/>
+<rectangle x1="-2.54" y1="-1.016" x2="2.54" y2="-0.508" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.15" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -206,6 +227,24 @@ SMDリード付き</description>
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="YFF15PC1C104MT000N" prefix="DC">
+<description>0.1µF Feed Through Capacitor 16V 3A 30 mOhm 0402 (1005 Metric), 4 PC Pad</description>
+<gates>
+<gate name="G$1" symbol="DC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="YFF15PC">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$3 P$4"/>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1520,6 +1559,7 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <part name="R7" library="Panasonic" deviceset="ERA-6AEB9312V" device=""/>
 <part name="R8" library="Panasonic" deviceset="ERA-6AEB5762V" device=""/>
 <part name="IC1" library="ACS780" deviceset="ACS780KLRTR-150B-T" device=""/>
+<part name="DC1" library="TDK" deviceset="YFF15PC1C104MT000N" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1540,11 +1580,11 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <instance part="FD6" gate="G$1" x="182.88" y="-48.26" rot="R90"/>
 <instance part="C4" gate="G$1" x="104.14" y="99.06"/>
 <instance part="C5" gate="G$1" x="144.78" y="53.34"/>
-<instance part="C6" gate="G$1" x="254" y="7.62"/>
+<instance part="C6" gate="G$1" x="190.5" y="7.62"/>
 <instance part="SUPPLY7" gate="GND" x="132.08" y="-220.98"/>
 <instance part="PMC1" gate="G$1" x="109.22" y="88.9"/>
 <instance part="PMC2" gate="G$1" x="149.86" y="43.18"/>
-<instance part="PMC3" gate="G$1" x="259.08" y="-2.54"/>
+<instance part="PMC3" gate="G$1" x="195.58" y="-2.54"/>
 <instance part="R1" gate="G$1" x="30.48" y="104.14"/>
 <instance part="R2" gate="G$1" x="25.4" y="58.42"/>
 <instance part="R3" gate="G$1" x="25.4" y="10.16"/>
@@ -1569,7 +1609,8 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <instance part="L1" gate="G$1" x="-165.1" y="30.48"/>
 <instance part="R7" gate="G$1" x="-170.18" y="-20.32" rot="R90"/>
 <instance part="R8" gate="G$1" x="-165.1" y="12.7" rot="R90"/>
-<instance part="IC1" gate="G$1" x="299.72" y="-182.88"/>
+<instance part="IC1" gate="G$1" x="233.68" y="-182.88"/>
+<instance part="DC1" gate="G$1" x="254" y="-187.96"/>
 </instances>
 <busses>
 </busses>
@@ -1579,8 +1620,8 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <pinref part="IC1" gate="G$1" pin="IP-"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <wire x1="132.08" y1="-218.44" x2="132.08" y2="-215.9" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="-215.9" x2="287.02" y2="-215.9" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="-215.9" x2="287.02" y2="-185.42" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-215.9" x2="220.98" y2="-215.9" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="-215.9" x2="220.98" y2="-185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-154.94" y1="-142.24" x2="-147.32" y2="-142.24" width="0.1524" layer="91"/>
@@ -1595,8 +1636,6 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <wire x1="-124.46" y1="-144.78" x2="-124.46" y2="-147.32" width="0.1524" layer="91"/>
 <wire x1="-124.46" y1="-147.32" x2="-142.24" y2="-147.32" width="0.1524" layer="91"/>
 <junction x="-142.24" y="-147.32"/>
-<wire x1="-147.32" y1="-139.7" x2="-147.32" y2="-142.24" width="0.1524" layer="91"/>
-<junction x="-147.32" y="-142.24"/>
 <pinref part="CN2" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -1787,6 +1826,16 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <wire x1="-53.34" y1="-48.26" x2="-53.34" y2="-40.64" width="0.1524" layer="91"/>
 <label x="-53.34" y="-43.18" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<wire x1="246.38" y1="-182.88" x2="259.08" y2="-182.88" width="0.1524" layer="91"/>
+<label x="256.54" y="-182.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DC1" gate="G$1" pin="GND"/>
+<wire x1="254" y1="-191.08" x2="254" y2="-198.12" width="0.1524" layer="91"/>
+<label x="254" y="-198.12" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="+3.3V" class="0">
 <segment>
@@ -1942,6 +1991,7 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
+<label x="10.16" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="GHB"/>
@@ -2088,7 +2138,8 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VOUT"/>
-<wire x1="312.42" y1="-177.8" x2="325.12" y2="-177.8" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-177.8" x2="259.08" y2="-177.8" width="0.1524" layer="91"/>
+<label x="256.54" y="-177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -2125,14 +2176,14 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <wire x1="104.14" y1="101.6" x2="104.14" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="254" y1="10.16" x2="254" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="254" y1="48.26" x2="177.8" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="10.16" x2="190.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="48.26" x2="177.8" y2="48.26" width="0.1524" layer="91"/>
 <junction x="177.8" y="48.26"/>
 <pinref part="PMC2" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="45.72" x2="149.86" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="PMC3" gate="G$1" pin="1"/>
-<wire x1="259.08" y1="0" x2="259.08" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="53.34" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="0" x2="195.58" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="53.34" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
 <junction x="177.8" y="53.34"/>
 <pinref part="PMC1" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="91.44" x2="109.22" y2="154.94" width="0.1524" layer="91"/>
@@ -2183,6 +2234,7 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="-144.78" y1="30.48" x2="-137.16" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-137.16" y1="30.48" x2="-137.16" y2="38.1" width="0.1524" layer="91"/>
+<label x="-137.16" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2298,6 +2350,11 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <pinref part="CN1" gate="G$2" pin="3"/>
 <wire x1="-48.26" y1="60.96" x2="-40.64" y2="60.96" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="DC1" gate="G$1" pin="P$2"/>
+<wire x1="259.08" y1="-187.96" x2="264.16" y2="-187.96" width="0.1524" layer="91"/>
+<label x="264.16" y="-187.96" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -2373,8 +2430,7 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 </net>
 <net name="LOSIDE" class="0">
 <segment>
-<wire x1="177.8" y1="-200.66" x2="236.22" y2="-205.74" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="-205.74" x2="236.22" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="-200.66" x2="177.8" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-208.28" x2="104.14" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="-208.28" x2="109.22" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="-208.28" x2="132.08" y2="-208.28" width="0.1524" layer="91"/>
@@ -2382,11 +2438,11 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <junction x="132.08" y="-208.28"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="-208.28" x2="149.86" y2="-208.28" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="-208.28" x2="236.22" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-208.28" x2="177.8" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="93.98" x2="104.14" y2="-208.28" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="-200.66" x2="254" y2="-203.2" width="0.1524" layer="91"/>
-<wire x1="254" y1="-203.2" x2="254" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="-200.66" x2="190.5" y2="-200.66" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-200.66" x2="190.5" y2="2.54" width="0.1524" layer="91"/>
 <junction x="177.8" y="-200.66"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="-210.82" x2="132.08" y2="-208.28" width="0.1524" layer="91"/>
@@ -2396,9 +2452,9 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <pinref part="PMC2" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="-208.28" x2="149.86" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="PMC3" gate="G$1" pin="2"/>
-<wire x1="236.22" y1="-205.74" x2="259.08" y2="-205.74" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="-205.74" x2="259.08" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="236.22" y="-205.74"/>
+<wire x1="177.8" y1="-208.28" x2="195.58" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="-208.28" x2="195.58" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="177.8" y="-208.28"/>
 <pinref part="FD2" gate="G$1" pin="A"/>
 <wire x1="91.44" y1="-208.28" x2="91.44" y2="-160.02" width="0.1524" layer="91"/>
 <pinref part="FET2" gate="G$1" pin="S"/>
@@ -2426,9 +2482,9 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <junction x="149.86" y="-208.28"/>
 <junction x="144.78" y="-208.28"/>
 <pinref part="IC1" gate="G$1" pin="IP+"/>
-<wire x1="287.02" y1="-180.34" x2="281.94" y2="-180.34" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="-180.34" x2="281.94" y2="-210.82" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="-210.82" x2="132.08" y2="-210.82" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="-180.34" x2="215.9" y2="-180.34" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-180.34" x2="215.9" y2="-210.82" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-210.82" x2="132.08" y2="-210.82" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="-109.22" x2="121.92" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="-60.96" x2="165.1" y2="-60.96" width="0.1524" layer="91"/>
 <junction x="177.8" y="-60.96"/>
@@ -2447,6 +2503,13 @@ Source: &lt;a href="https://www.hirose.com/product/en/download_file/key_name/FX2
 <pinref part="IC4" gate="G$1" pin="SLA"/>
 <wire x1="-66.04" y1="-91.44" x2="-78.74" y2="-91.44" width="0.1524" layer="91"/>
 <label x="-78.74" y="-91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="DC1" gate="G$1" pin="P$1"/>
+<pinref part="IC1" gate="G$1" pin="VCC"/>
+<wire x1="248.92" y1="-187.96" x2="246.38" y2="-187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

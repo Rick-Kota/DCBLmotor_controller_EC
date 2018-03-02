@@ -1316,6 +1316,46 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-x
 <wire x1="-0.54" y1="-2.64" x2="-2.82" y2="-2.64" width="0.127" layer="21"/>
 <text x="-2.27" y="-4.68" size="1.016" layer="21">&gt;NAME</text>
 </package>
+<package name="DF11-16DP-2D">
+<pad name="P$1" x="0" y="0" drill="0.75" shape="square"/>
+<pad name="P$2" x="0" y="2" drill="0.75"/>
+<pad name="P$3" x="-2" y="0" drill="0.75"/>
+<pad name="P$4" x="-2" y="2" drill="0.75"/>
+<pad name="P$5" x="-4" y="0" drill="0.75"/>
+<pad name="P$6" x="-4" y="2" drill="0.75"/>
+<pad name="P$7" x="-6" y="0" drill="0.75"/>
+<pad name="P$8" x="-6" y="2" drill="0.75"/>
+<pad name="P$9" x="-8" y="0" drill="0.75"/>
+<pad name="P$10" x="-8" y="2" drill="0.75"/>
+<pad name="P$11" x="-10" y="0" drill="0.75"/>
+<pad name="P$12" x="-10" y="2" drill="0.75"/>
+<pad name="P$13" x="-12" y="0" drill="0.75"/>
+<pad name="P$14" x="-12" y="2" drill="0.75"/>
+<pad name="P$15" x="-14" y="0" drill="0.75"/>
+<pad name="P$16" x="-14" y="2" drill="0.75"/>
+<wire x1="2" y1="3.5" x2="-16" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-16" y1="3.5" x2="-16" y2="-1" width="0.127" layer="21"/>
+<wire x1="-16" y1="-1" x2="-16" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-16" y1="-1.5" x2="-14" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-14" y1="-1.5" x2="-12.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-0.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-1.5" x2="0" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.5" x2="0.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.5" x2="2" y2="-1" width="0.127" layer="21"/>
+<wire x1="2" y1="-1" x2="2" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="-1.5" x2="-12.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="-1" x2="-1.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.5" x2="0" y2="-1" width="0.127" layer="21"/>
+<wire x1="0" y1="-1" x2="2" y2="-1" width="0.127" layer="21"/>
+<wire x1="-14" y1="-1.5" x2="-14" y2="-1" width="0.127" layer="21"/>
+<wire x1="-14" y1="-1" x2="-16" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-1.5" x2="0" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.5" x2="-0.5" y2="-1.5" width="0.127" layer="21"/>
+<text x="-7.5" y="-3.5" size="1.27" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CON-1X4">
@@ -1330,6 +1370,30 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-x
 <pin name="3" x="0" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="4" x="0" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
+<symbol name="CON-1X16">
+<wire x1="0" y1="-43.18" x2="7.62" y2="-43.18" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-43.18" x2="7.62" y2="0" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="0" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-43.18" width="0.4064" layer="94"/>
+<text x="0" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-45.72" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="3.81" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="3.81" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="3" x="3.81" y="-7.62" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="4" x="3.81" y="-10.16" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="5" x="3.81" y="-12.7" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="6" x="3.81" y="-15.24" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="7" x="3.81" y="-17.78" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="8" x="3.81" y="-20.32" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="9" x="3.81" y="-22.86" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="10" x="3.81" y="-25.4" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="11" x="3.81" y="-27.94" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="12" x="3.81" y="-30.48" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="13" x="3.81" y="-33.02" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="14" x="3.81" y="-35.56" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="15" x="3.81" y="-38.1" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="16" x="3.81" y="-40.64" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DF11-4DP-2DSR" prefix="CN">
@@ -1343,6 +1407,36 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-x
 <connect gate="G$1" pin="2" pad="P$2"/>
 <connect gate="G$1" pin="3" pad="P$3"/>
 <connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DF11-16DP-2DSA" prefix="CN">
+<gates>
+<gate name="G$1" symbol="CON-1X16" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DF11-16DP-2D">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="10" pad="P$10"/>
+<connect gate="G$1" pin="11" pad="P$11"/>
+<connect gate="G$1" pin="12" pad="P$12"/>
+<connect gate="G$1" pin="13" pad="P$13"/>
+<connect gate="G$1" pin="14" pad="P$14"/>
+<connect gate="G$1" pin="15" pad="P$15"/>
+<connect gate="G$1" pin="16" pad="P$16"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+<connect gate="G$1" pin="8" pad="P$8"/>
+<connect gate="G$1" pin="9" pad="P$9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1555,6 +1649,7 @@ Source: &lt;a href="http://docs-europe.electrocomponents.com/webdocs/0de0/090076
 <part name="R5" library="VISHAY" deviceset="CRCW06031K00JNEAC" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="IC1" library="ADP3338AKCZ-3.3RL7" deviceset="ADP3338AKCZ-3.3RL7" device=""/>
+<part name="CN3" library="Hirose" deviceset="DF11-16DP-2DSA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1597,6 +1692,7 @@ Source: &lt;a href="http://docs-europe.electrocomponents.com/webdocs/0de0/090076
 <instance part="R5" gate="G$1" x="187.96" y="119.38" rot="R90"/>
 <instance part="SUPPLY1" gate="GND" x="187.96" y="60.96"/>
 <instance part="IC1" gate="G$1" x="-76.2" y="60.96"/>
+<instance part="CN3" gate="G$1" x="220.98" y="205.74"/>
 </instances>
 <busses>
 </busses>
